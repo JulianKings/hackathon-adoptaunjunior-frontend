@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-export function Help() {
+export function Solution() {
     const { id } = useParams<{ id: string }>();
 
     return (
         <div>
-            Help Page for id: {id}
+            Solution Page for id: {id}
         </div>
     );
 }

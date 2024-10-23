@@ -6,8 +6,12 @@ import { Login } from "./pages/login";
 import { Solutions } from "./pages/solutions";
 import { Challenges } from "./pages/challenges";
 import { Resources } from "./pages/resources";
-import { Help } from "./pages/help";
+import { Helper } from "./pages/helper";
 import React from "react";
+import { Solution } from "./pages/solution";
+import { Challenge } from "./pages/challenge";
+import { Resource } from "./pages/resource";
+import { Help } from "./pages/help";
 
 export const Router = () => {
     const router = createBrowserRouter ([
@@ -19,9 +23,13 @@ export const Router = () => {
                 { path: '/signup', element: <SignUp /> },
                 { path: '/login', element: <Login /> },
                 { path: '/solutions', element: <Solutions /> },
+                { path: '/solution/:id', element: <Solution /> },
                 { path: '/challenges', element: <Challenges /> },
+                { path: '/challenge/:id', element: <Challenge /> },
                 { path: '/resources', element: <Resources /> },
-                { path: '/help', element: <Help /> }
+                { path: '/resource/:id', element: <Resource /> },
+                { path: '/help', element: <Helper /> },
+                { path: '/help/:id', element: <Help /> },
             ]
         }
     ]);
