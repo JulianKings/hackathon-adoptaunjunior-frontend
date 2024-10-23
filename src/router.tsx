@@ -7,6 +7,7 @@ import { Solutions } from "./pages/solutions";
 import { Challenges } from "./pages/challenges";
 import { Resources } from "./pages/resources";
 import { Help } from "./pages/help";
+import React from "react";
 
 export const Router = () => {
     const router = createBrowserRouter ([
