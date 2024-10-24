@@ -6,7 +6,7 @@ import { Login } from "./pages/login";
 import { Solutions } from "./pages/solutions";
 import { Challenges } from "./pages/challenges";
 import { Resources } from "./pages/resources";
-import { Helper } from "./pages/helper";
+import { Helper } from "./pages/helper/helper.tsx";
 import React from "react";
 import { Solution } from "./pages/solution";
 import { Challenge } from "./pages/challenge";

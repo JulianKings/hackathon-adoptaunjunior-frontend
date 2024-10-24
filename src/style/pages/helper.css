@@ -124,15 +124,4 @@
 .pagination span {
   font-size: 1rem;
   color: #f1c40f;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  z-index: 0;
-}
-
-body {
-  font-family: "Calibri", sans-serif;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=helper.css.map */
