@@ -2,7 +2,6 @@
   background-color: #2c2c2c;
   color: #f1c40f;
   padding: 1em;
-  border-radius: 0.5em;
 }
 .helper h2 {
   text-align: center;
@@ -41,7 +40,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
+  gap: 0.75em;
   margin: 1em 0;
 }
 .helper__list__item {
