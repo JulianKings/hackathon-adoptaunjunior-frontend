@@ -1,8 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-const userDefault = "../assets/user_default_pic.webp";
 
-const data = [
+interface Item {
+    id: number;
+    username: string;
+    title: string;
+    tags: string[];
+    created_at: string; 
+    votes: number;
+    views: number;
+}
+
+const data: Item[] = [
     {
         id: 1,
         username: "witchy_coder",
@@ -50,7 +59,21 @@ const data = [
     }
 ];
 
-export const Helper = () => {
+export const Helper: React.FC = () => {
+    const formatDate = (dateString: string): string => {
+        const options: Intl.DateTimeFormatOptions = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            hour12: true 
+        };
+
+        const date = new Date(dateString);
+        return date.toLocaleString('en-US', options);
+    };
+    
     return (
         <div className="helper">
             <h2>Help Page</h2>
@@ -59,7 +82,7 @@ export const Helper = () => {
                     <NavLink to={`/help/${item.id}`} key={item.id} className="helper__list__item">
                         <div className="helper__list__item__userpic">
                             <div>
-                                <img src={userDefault} alt="user profile pic" />
+                                <img src="src/assets/user_default_pic.webp" alt="user profile pic" />
                             </div>
                         </div>
                         <div className="helper__list__item__userinfo">
@@ -67,7 +90,7 @@ export const Helper = () => {
                                 <strong>{item.title}</strong> <span>({item.tags.join(', ')})</span>
                             </div>
                             <div>
-                                <em>{item.username}</em> - {new Date(item.created_at).toLocaleDateString()}
+                                <em>{item.username} - {formatDate(item.created_at)}</em>
                             </div>
                         </div>
                         <div className="helper__list__item__userstats">
@@ -83,4 +106,4 @@ export const Helper = () => {
             </div>
         </div>
     );
-}
+};

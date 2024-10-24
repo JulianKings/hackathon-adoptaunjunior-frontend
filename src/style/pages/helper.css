@@ -68,15 +68,4 @@
   padding: 0.25em 0.5em;
   margin: 0.25em;
   font-size: 0.8rem;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  z-index: 0;
-}
-
-body {
-  font-family: "Calibri", sans-serif;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=helper.css.map */
