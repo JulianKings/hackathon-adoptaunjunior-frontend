@@ -135,7 +135,7 @@
 .index-page__title {
   color: var(--theme-white);
   margin-bottom: 65px;
-  font-family: Creepster;
+  font-family: Sancreek;
 }
 .index-page__button {
   margin-bottom: 120px;
@@ -145,15 +145,18 @@
   font-size: 24px;
 }
 
-.challenges-snippet {
-  background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
+.challenges-snippet, .resources-snippet {
   width: 78%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
   border-radius: 12px;
   padding: 40px 0;
+  margin-bottom: 65px;
+}
+
+.challenges-snippet {
   border-collapse: separate;
   border-spacing: 0;
-  margin: 0 auto;
-  margin-bottom: 65px;
 }
 .challenges-snippet th, .challenges-snippet td {
   border-bottom: 1px solid #000;
@@ -167,6 +170,14 @@
 }
 .challenges-snippet th:last-child, .challenges-snippet td:last-child {
   padding-right: 60px;
+}
+
+.resources-snippet {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.resources-snippet__image {
+  width: 200px;
 }
 
 :root {

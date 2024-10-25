@@ -26,11 +26,11 @@ const resources = [
 
 export function ResourcesSnippet() {
     return (
-        <div className="trucos-snippet">
+        <div className="resources-snippet">
             {resources.map(resource => (
                 <SingleResourceSnippet 
                     title={resource.title}
-                    image={resource.image}
+                    image="src/assets/resource-mock-image.png"
                     description={resource.description}
                 />
             ))}

@@ -6,7 +6,7 @@
     &__title {
         color: var(--theme-white);
         margin-bottom: 65px;
-        font-family: Creepster;
+        font-family: Sancreek;
     }
     &__button {
         margin-bottom: 120px;
@@ -17,15 +17,18 @@
     }
 }
 
-.challenges-snippet {
-    background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
+.challenges-snippet, .resources-snippet {
     width: 78%;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
     border-radius: 12px;
     padding: 40px 0;
+    margin-bottom: 65px;
+}
+
+.challenges-snippet {
     border-collapse: separate; 
     border-spacing: 0;
-    margin: 0 auto;
-    margin-bottom: 65px;
     th, td {
         border-bottom: 1px solid #000;
         padding: 35px 8px;
@@ -38,6 +41,14 @@
     } 
     th:last-child, td:last-child {
         padding-right: 60px;
+    }
+}
+
+.resources-snippet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &__image {
+        width: 200px;
     }
 }
 
