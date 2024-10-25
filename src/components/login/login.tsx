@@ -41,6 +41,7 @@ export const Login = () => {
 
     return (
         <div className="container">
+            <img src="./../../assets/HALLO.png" alt="" />
             <div className="form__container">
                 <h2 className="title">LOGIN</h2>
                 <form onSubmit={handleSubmit}>
