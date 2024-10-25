@@ -1,4 +1,10 @@
-@import 'pages/helper';
+@import 'pages/helper', 'pages/index';
+
+:root {
+    --theme-black: #2B2B2B;
+    --theme-white: #FFFBE8;
+    --theme-orange: #FF981B;
+}
 
 * {
     box-sizing: border-box;
@@ -10,4 +16,3 @@
 body {
     font-family: 'Calibri', sans-serif;
 }
-

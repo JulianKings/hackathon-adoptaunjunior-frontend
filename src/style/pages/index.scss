@@ -1,0 +1,26 @@
+.index-page {
+    background-color: var(--theme-black);
+    text-align: center;
+    &__title {
+        color: var(--theme-white);
+    }
+}
+
+.challenges-snippet {
+    background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
+    border-radius: 12px;
+    padding: 50px 0;
+    border-collapse: separate; 
+    border-spacing: 0;
+    th, td {
+        border-bottom: 1px solid #000;
+        padding: 8px;
+    }
+    th:first-child, td:first-child{
+        padding-left: 60px;
+    } 
+    th:last-child, td:last-child {
+        padding-right: 60px;
+    }
+}
+
