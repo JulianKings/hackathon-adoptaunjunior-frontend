@@ -6,6 +6,7 @@ export interface HelperItemInterface {
   created_at: string;
   votes: number;
   views: number;
+  message:string;
 }
 export interface UseDataModifiersReturn<T> {
   dataCurrentPage: T[];

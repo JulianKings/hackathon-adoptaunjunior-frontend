@@ -11,7 +11,7 @@ import React from "react";
 import { Solution } from "./pages/solution";
 import { Challenge } from "./pages/challenge";
 import { Resource } from "./pages/resource";
-import { Help } from "./pages/help";
+import { Help } from "./pages/help/help.tsx";
 
 export const Router = () => {
     const router = createBrowserRouter ([
