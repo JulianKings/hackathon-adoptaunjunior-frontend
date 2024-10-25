@@ -145,12 +145,18 @@
   background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
   font-size: 24px;
 }
-.index-page__pumpkin {
+.index-page__image {
   position: absolute;
   z-index: 1;
+}
+.index-page__image--pumpkin {
   top: -175px;
   right: -300px;
   transform: rotate(25deg);
+}
+.index-page__image--skullworm {
+  top: 125%;
+  left: -20%;
 }
 
 .challenges-snippet, .resources-snippet {

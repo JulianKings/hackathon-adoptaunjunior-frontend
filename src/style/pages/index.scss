@@ -16,12 +16,18 @@
         background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
         font-size: 24px;
     }
-    &__pumpkin {
+    &__image {
         position: absolute;
         z-index: 1;
-        top: -175px;
-        right: -300px;
-        transform: rotate(25deg);
+        &--pumpkin {
+            top: -175px;
+            right: -300px;
+            transform: rotate(25deg);
+        }
+        &--skullworm {
+            top: 125%;
+            left: -20%;
+        }
     }
 }
 
