@@ -1,32 +1,34 @@
-$background-color: #2c2c2c;
-$text-color: #f1c40f;
-$highlight-color: #d35400;
-$card-background: #3e3e3e;
-$card-hover-background: darken($card-background, 5%);
-$tag-background: #c0392b;
-$active-button-background: $highlight-color;
-$inactive-button-background: darken($highlight-color, 10%);
-$button-padding: 0.5em 1em;
-$button-margin: 0 0.5em; // Add margin for spacing
+$orange: #FF981B;
+$white: #FFFBE8;
+$black: #2B2B2B;
+// Color palette
+$primary-background: $orange;
+$item-background: $white;
+$text-color: $black;
+$accent-color: $orange;
+$hover-background: lighten($white, 35%);
+$border-color: lighten($orange, 20%);
+$muted-text: lighten($black, 10%);
+$active-button-background: lighten($white, 20%);
+$inactive-button-background: $white;
+
+// Spacing variables
+$padding-small: 0.5em;
+$padding-medium: 1em;
+$margin-small: 0.5em;
+$margin-medium: 1em;
 
 .helper {
-    background-color: $background-color;
+    background-color: $primary-background;
     color: $text-color;
-    padding: 1em;
-
-    h2 {
-        text-align: center;
-        margin-bottom: 1em;
-        font-size: 2rem;
-    }
+    padding: $padding-medium;
 
     &__modifiers {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 1em;
+        margin-bottom: $margin-medium;
 
-        // Create a navigation style for the sorting buttons
         div {
             display: flex;
             align-items: center;
@@ -34,21 +36,20 @@ $button-margin: 0 0.5em; // Add margin for spacing
             button {
                 background-color: $inactive-button-background;
                 color: $text-color;
-                border: 2px solid transparent; // Border for active button visibility
+                border: 1px solid $border-color;
                 border-radius: 0.25em;
-                padding: $button-padding;
-                margin: $button-margin; // Add margin for spacing
+                padding: $padding-small $padding-medium;
+                margin: $margin-small;
                 cursor: pointer;
-                transition: background-color 0.3s, border-color 0.3s;
+                transition: background-color 0.3s;
 
                 &.active {
                     background-color: $active-button-background;
-                    color: #fff; // Make the text white for contrast
-                    border-color: lighten($highlight-color, 20%); // Light border for active button
+                    color: $primary-background;
                 }
 
                 &:hover {
-                    background-color: lighten($inactive-button-background, 10%);
+                    background-color: $hover-background;
                 }
             }
         }
@@ -57,32 +58,31 @@ $button-margin: 0 0.5em; // Add margin for spacing
     &__list {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 0.75em;
-        margin: 1em 0;
-
+        margin: $margin-medium 0;
+        border-radius: $margin-small;
+overflow: hidden;
         &__item {
             display: flex;
             align-items: center;
-            background-color: $card-background;
-            border: 2px solid $highlight-color;
-            border-radius: 0.5em;
-            padding: 0.75em;
+            background-color: $item-background;
+            border: 1px solid $border-color;
+            padding: $padding-small;
             width: 100%;
             transition: background-color 0.3s;
             text-decoration: none;
+            color: $text-color;
 
             &:hover {
-                background-color: $card-hover-background;
+                background-color: $hover-background;
             }
 
             &__userpic {
-                margin-right: 0.75em;
+                margin-right: $padding-small;
 
                 img {
                     border-radius: 50%;
-                    width: 2.5em; 
-                    height: 2.5em; 
+                    width: 2em;
+                    height: 2em;
                 }
             }
 
@@ -90,28 +90,21 @@ $button-margin: 0 0.5em; // Add margin for spacing
                 flex-grow: 1;
 
                 strong {
-                    font-size: 1.2rem;
-                    color: $highlight-color;
+                    font-size: 1rem;
+                    color: $primary-background;
                 }
 
-                span {
-                    font-size: 0.9rem;
-                    color: lighten($highlight-color, 20%);
-                }
-
+                span,
                 em {
-                    font-size: 0.8rem;
-                    color: lighten($text-color, 40%);
+                    font-size: 0.85rem;
+                    color: $muted-text;
                 }
             }
 
             &__userstats {
                 text-align: right;
-
-                div {
-                    font-size: 0.9rem;
-                    color: lighten($text-color, 30%);
-                }
+                font-size: 0.85rem;
+                color: $muted-text;
             }
         }
     }
@@ -119,42 +112,158 @@ $button-margin: 0 0.5em; // Add margin for spacing
 
 .tag {
     display: inline-block;
-    background-color: $tag-background;
+    background-color: $primary-background;
     border-radius: 0.25em;
-    color: #fff;
+    color: $text-color;
     padding: 0.25em 0.5em;
     margin: 0.25em;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
+
 .pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1em;
-  gap: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: $margin-medium;
+    gap: $margin-small;
 
-  button {
-      background-color: $inactive-button-background;
-      color: $text-color;
-      border: 2px solid transparent;
-      border-radius: 0.25em;
-      padding: 0.5em 1em;
-      cursor: pointer;
-      transition: background-color 0.3s, border-color 0.3s;
+    button {
+        background-color: $inactive-button-background;
+        color: $text-color;
+        border: 1px solid $border-color;
+        border-radius: 0.25em;
+        padding: $padding-small $padding-medium;
+        cursor: pointer;
+        transition: background-color 0.3s;
 
-      &:disabled {
-          background-color: darken($inactive-button-background, 15%);
-          cursor: not-allowed;
-      }
+        &:disabled {
+            background-color: darken($inactive-button-background, 10%);
+            cursor: not-allowed;
+        }
 
-      &:hover:not(:disabled) {
-          background-color: lighten($inactive-button-background, 10%);
-      }
-  }
+        &:hover:not(:disabled) {
+            background-color: lighten($inactive-button-background, 10%);
+        }
+    }
 
-  span {
-      font-size: 1rem;
-      color: $text-color;
-  }
+    span {
+        font-size: 1rem;
+        color: $text-color;
+    }
+}
 
+.help {
+    background-color: $primary-background;
+    color: $text-color;
+    padding: $padding-medium;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $padding-small;
+        background-color: $primary-background;
+        color: $text-color;
+        border-bottom: 1px solid $border-color;
+
+        h1 {
+            font-size: 1.5rem;
+            color: $text-color;
+            margin: 0;
+        }
+
+        button {
+            background-color: $inactive-button-background;
+            color: $text-color;
+            border: 1px solid $border-color;
+            border-radius: 0.25em;
+            padding: $padding-small $padding-medium;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $hover-background;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        padding-top: $padding-medium;
+
+        &__sidebar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $item-background;
+            padding: $padding-small;
+            border-radius: 0.5em;
+            border: 1px solid $border-color;
+            width: 3em;
+            gap: $margin-small;
+
+            button {
+                background-color: $primary-background;
+                color: $text-color;
+                border: none;
+                cursor: pointer;
+                font-size: 1.25rem;
+
+                &:hover {
+                    color: lighten($text-color, 20%);
+                }
+            }
+
+            span {
+                color: $text-color;
+                font-size: 1.1rem;
+                text-align: center;
+            }
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding-left: $padding-medium;
+
+            &__user {
+                display: flex;
+                align-items: center;
+                gap: $margin-small;
+                border-bottom: 1px solid $border-color;
+                padding-bottom: $padding-small;
+                margin-bottom: $padding-small;
+
+                &__pic {
+                    width: 3em;
+                    height: 3em;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: $primary-background;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &__name {
+                    font-size: 1rem;
+                    color: $text-color;
+                }
+
+                &__createdat, &__views {
+                    font-size: 0.9rem;
+                    color: $muted-text;
+                }
+            }
+
+            &__message {
+                font-size: 1rem;
+                color: $text-color;
+                padding-top: $padding-small;
+            }
+        }
+    }
 }

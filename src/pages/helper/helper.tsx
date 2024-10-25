@@ -38,7 +38,6 @@ export const Helper: React.FC = () => {
 
     return (
         <div className="helper">
-            <h2>Help Page</h2>
             <div className="helper__modifiers">
                 <div>
                     <button
