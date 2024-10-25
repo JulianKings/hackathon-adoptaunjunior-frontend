@@ -5,22 +5,22 @@ const resources = [
     { 
       title: 'Resource 1', 
       image: 'https://example.com/image1.jpg', 
-      description: 'Short description of Resource 1' 
+      description: 'For this kata you will be using some meta-programming...' 
     },
     { 
       title: 'Resource 2', 
       image: 'https://example.com/image2.jpg', 
-      description: 'Short description of Resource 2' 
+      description: 'For this kata you will be using some meta-programming...' 
     },
     { 
       title: 'Resource 3', 
       image: 'https://example.com/image3.jpg', 
-      description: 'Short description of Resource 3' 
+      description: 'For this kata you will be using some meta-programming...' 
     },
     { 
       title: 'Resource 4', 
       image: 'https://example.com/image4.jpg', 
-      description: 'Short description of Resource 4' 
+      description: 'For this kata you will be using some meta-programming...' 
     },
 ];
 
