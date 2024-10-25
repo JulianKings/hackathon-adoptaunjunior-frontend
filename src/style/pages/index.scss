@@ -65,8 +65,10 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 5% 65px;
     &__title {
+        max-width: 65%;
         font-family: Creepster;
         font-size: 24px;
+        margin: 0 auto;
         margin-bottom: 16px;
     }
     &__image {

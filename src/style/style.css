@@ -194,8 +194,10 @@
   padding: 5% 65px;
 }
 .resources-snippet__title {
+  max-width: 65%;
   font-family: Creepster;
   font-size: 24px;
+  margin: 0 auto;
   margin-bottom: 16px;
 }
 .resources-snippet__image {
