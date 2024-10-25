@@ -3,9 +3,9 @@ import React from "react";
 export function SingleResourceSnippet({ title, image, description }) {
     return (
         <div>
-            <h3>{title}</h3>
+            <h3 className="resources-snippet__title">{title}</h3>
             <img className="resources-snippet__image" src={image} />
-            <p>{description}</p>
+            <p className="resources-snippet__description">{description}</p>
         </div>
     )
 }

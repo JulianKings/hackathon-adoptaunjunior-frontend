@@ -6,10 +6,11 @@ import { HomeLink } from "../components/HomeLink";
 export function Index() {
     return (
         <div className="index-page">
-            <h1 className="index-page__title">Trucos</h1>
+            <img className="index-page__pumpkin" src="src/assets/pumpkin.webp" />
+            <h1 className="index-page__title">TRUCOS</h1>
             <ChallengesSnippet />
             <button className="index-page__button">VER TODOS</button>
-            <h1 className="index-page__title">Tratos</h1>
+            <h1 className="index-page__title">TRATOS</h1>
             <ResourcesSnippet />
             <button className="index-page__button">VER TODOS</button>
             <div>

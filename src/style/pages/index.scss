@@ -7,6 +7,7 @@
         color: var(--theme-white);
         margin-bottom: 65px;
         font-family: Sancreek;
+        font-size: 60px;
     }
     &__button {
         margin-bottom: 120px;
@@ -15,9 +16,18 @@
         background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
         font-size: 24px;
     }
+    &__pumpkin {
+        position: absolute;
+        z-index: 1;
+        top: -175px;
+        right: -300px;
+        transform: rotate(25deg);
+    }
 }
 
 .challenges-snippet, .resources-snippet {
+    position: relative;
+    z-index: 2;
     width: 78%;
     margin: 0 auto;
     background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
@@ -46,9 +56,22 @@
 
 .resources-snippet {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5% 65px;
+    &__title {
+        font-family: Creepster;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
     &__image {
-        width: 200px;
+        width: 280px;
+        height: 196px;
+        margin-bottom: 22px;
+        object-fit: cover;
+    }
+    &__description {
+        max-width: 250px;
+        margin: 0 auto;
     }
 }
 
