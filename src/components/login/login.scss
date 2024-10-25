@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF981B;
+    height: 100vh;
+}
+
+.form__container {
+    background-image: url('./assets/HALLO.png');
+    text-align: center;
+}
+
+.title__input {
+    color: #2B2B2B;
+}
+
+.title {
+    margin-bottom: 1rem;
+    letter-spacing: 0.4rem;
+    font-size: 5rem;
+    color: #FFFBE8;
+    font-family: 'Creepster', cursive;
+    text-shadow:
+        -1px -1px 0 #1c1c1c,
+        1px -1px 0 #1c1c1c,
+        -1px 1px 0 #1c1c1c,
+        1px 1px 0 #1c1c1c,
+        -1.5px -1.5px 0 #1c1c1c,
+        1.5px 1.5px 0 #1c1c1c;
+}
+
+
+.input {
+    width: 100%;
+    padding: 0.625rem;
+    margin: 0.625rem 0;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 251, 232, 1);
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    background-color: rgba(255, 251, 232, 1);
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.625rem;
+}
