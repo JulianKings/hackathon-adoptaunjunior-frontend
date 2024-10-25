@@ -83,3 +83,21 @@
     }
 }
 
+.home-link-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-link {
+    width: 486px;
+    font-family: Creepster;
+    font-size: 60px;
+    border-radius: 46px;
+    background-color: var(--theme-orange);
+    padding: 70px 5%;
+    background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
+    text-align: center;
+    &__title {
+        margin-bottom: 45px;
+    }
+}

@@ -14,9 +14,9 @@ export function Index() {
             <h1 className="index-page__title">TRATOS</h1>
             <ResourcesSnippet />
             <button className="index-page__button">VER TODOS</button>
-            <div>
-                <HomeLink name="Preguntas" icon=""/>
-                <HomeLink name="Logros" icon=""/>
+            <div className="home-link-container">
+                <HomeLink name="Preguntas" icon="src/assets/question-mark-icon.png"/>
+                <HomeLink name="Logros" icon="src/assets/cup-icon.png"/>
             </div>
         </div>
     );
