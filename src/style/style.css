@@ -120,21 +120,11 @@
   color: #2B2B2B;
   padding: 1em;
 }
-.help__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5em;
-  background-color: #FF981B;
-  color: #2B2B2B;
-  border-bottom: 1px solid #ffc681;
+.help > div {
+  border-radius: 0.5em;
+  overflow: hidden;
 }
-.help__header h1 {
-  font-size: 1.5rem;
-  color: #2B2B2B;
-  margin: 0;
-}
-.help__header button {
+.help button {
   background-color: #FFFBE8;
   color: #2B2B2B;
   border: 1px solid #ffc681;
@@ -143,12 +133,34 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.help__header button:hover {
+.help button:hover {
   background-color: white;
+}
+.help__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  background-color: #FFFBE8;
+  color: #2B2B2B;
+  border-bottom: 1px solid #ffc681;
+}
+.help__header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+.help__header__title {
+  font-size: 1.5rem;
+  color: #2B2B2B;
+  margin: 0;
 }
 .help__content {
   display: flex;
   padding-top: 1em;
+  background-color: #FFFBE8;
 }
 .help__content__sidebar {
   display: flex;
@@ -157,19 +169,8 @@
   background-color: #FFFBE8;
   padding: 0.5em;
   border-radius: 0.5em;
-  border: 1px solid #ffc681;
   width: 3em;
   gap: 0.5em;
-}
-.help__content__sidebar button {
-  background-color: #FF981B;
-  color: #2B2B2B;
-  border: none;
-  cursor: pointer;
-  font-size: 1.25rem;
-}
-.help__content__sidebar button:hover {
-  color: #5e5e5e;
 }
 .help__content__sidebar span {
   color: #2B2B2B;
@@ -186,20 +187,13 @@
   display: flex;
   align-items: center;
   gap: 0.5em;
-  border-bottom: 1px solid #ffc681;
   padding-bottom: 0.5em;
   margin-bottom: 0.5em;
 }
-.help__content__info__user__pic {
-  width: 3em;
-  height: 3em;
+.help__content__info__user__pic > img {
   border-radius: 50%;
-  overflow: hidden;
-  background-color: #FF981B;
-}
-.help__content__info__user__pic img {
-  width: 100%;
-  height: 100%;
+  width: 2em;
+  height: 2em;
 }
 .help__content__info__user__name {
   font-size: 1rem;

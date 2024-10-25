@@ -1,7 +1,7 @@
 $orange: #FF981B;
 $white: #FFFBE8;
 $black: #2B2B2B;
-// Color palette
+
 $primary-background: $orange;
 $item-background: $white;
 $text-color: $black;
@@ -12,7 +12,6 @@ $muted-text: lighten($black, 10%);
 $active-button-background: lighten($white, 20%);
 $inactive-button-background: $white;
 
-// Spacing variables
 $padding-small: 0.5em;
 $padding-medium: 1em;
 $margin-small: 0.5em;
@@ -60,7 +59,8 @@ $margin-medium: 1em;
         flex-direction: column;
         margin: $margin-medium 0;
         border-radius: $margin-small;
-overflow: hidden;
+        overflow: hidden;
+
         &__item {
             display: flex;
             align-items: center;
@@ -157,39 +157,55 @@ overflow: hidden;
     color: $text-color;
     padding: $padding-medium;
 
+    >div {
+        border-radius: $margin-small;
+        overflow: hidden;
+    }
+
+    button {
+        background-color: $inactive-button-background;
+        color: $text-color;
+        border: 1px solid $border-color;
+        border-radius: 0.25em;
+        padding: $padding-small $padding-medium;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $hover-background;
+        }
+    }
+
     &__header {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: $padding-small;
-        background-color: $primary-background;
+        background-color: $item-background;
         color: $text-color;
         border-bottom: 1px solid $border-color;
 
-        h1 {
+        >div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: $margin-small;
+        }
+
+        &__title {
             font-size: 1.5rem;
             color: $text-color;
             margin: 0;
         }
 
-        button {
-            background-color: $inactive-button-background;
-            color: $text-color;
-            border: 1px solid $border-color;
-            border-radius: 0.25em;
-            padding: $padding-small $padding-medium;
-            cursor: pointer;
-            transition: background-color 0.3s;
 
-            &:hover {
-                background-color: $hover-background;
-            }
-        }
     }
 
     &__content {
         display: flex;
         padding-top: $padding-medium;
+        background-color: $item-background;
 
         &__sidebar {
             display: flex;
@@ -198,21 +214,8 @@ overflow: hidden;
             background-color: $item-background;
             padding: $padding-small;
             border-radius: 0.5em;
-            border: 1px solid $border-color;
             width: 3em;
             gap: $margin-small;
-
-            button {
-                background-color: $primary-background;
-                color: $text-color;
-                border: none;
-                cursor: pointer;
-                font-size: 1.25rem;
-
-                &:hover {
-                    color: lighten($text-color, 20%);
-                }
-            }
 
             span {
                 color: $text-color;
@@ -231,20 +234,14 @@ overflow: hidden;
                 display: flex;
                 align-items: center;
                 gap: $margin-small;
-                border-bottom: 1px solid $border-color;
                 padding-bottom: $padding-small;
                 margin-bottom: $padding-small;
 
                 &__pic {
-                    width: 3em;
-                    height: 3em;
-                    border-radius: 50%;
-                    overflow: hidden;
-                    background-color: $primary-background;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
+                    >img {
+                        border-radius: 50%;
+                        width: 2em;
+                        height: 2em;
                     }
                 }
 
@@ -253,7 +250,8 @@ overflow: hidden;
                     color: $text-color;
                 }
 
-                &__createdat, &__views {
+                &__createdat,
+                &__views {
                     font-size: 0.9rem;
                     color: $muted-text;
                 }
