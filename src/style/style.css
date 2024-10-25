@@ -127,6 +127,8 @@
 }
 
 .index-page {
+  position: relative;
+  overflow: hidden;
   background-color: var(--theme-black);
   text-align: center;
   font-size: 18px;
@@ -139,7 +141,7 @@
   font-size: 60px;
 }
 .index-page__button {
-  margin-bottom: 120px;
+  margin-bottom: 200px;
   padding: 20px 50px;
   border-radius: 12px;
   background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
@@ -155,8 +157,12 @@
   transform: rotate(25deg);
 }
 .index-page__image--skullworm {
-  top: 125%;
+  top: 630px;
   left: -20%;
+}
+.index-page__image--ghost {
+  bottom: 190px;
+  right: -300px;
 }
 
 .challenges-snippet, .resources-snippet {
@@ -173,6 +179,7 @@
 .challenges-snippet {
   border-collapse: separate;
   border-spacing: 0;
+  box-shadow: 4px 8px 4px rgb(82, 45, 0);
 }
 .challenges-snippet th, .challenges-snippet td {
   border-bottom: 1px solid #000;
@@ -192,6 +199,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 5% 65px;
+  box-shadow: -4px 8px 4px rgb(82, 45, 0);
 }
 .resources-snippet__title {
   max-width: 65%;
@@ -214,9 +222,13 @@
 .home-link-container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 200px;
 }
 
 .home-link {
+  position: relative;
+  z-index: 2;
+  box-shadow: 4px 8px 4px rgb(82, 45, 0);
   width: 486px;
   font-family: Creepster;
   font-size: 60px;

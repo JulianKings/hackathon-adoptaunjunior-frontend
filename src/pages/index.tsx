@@ -18,6 +18,7 @@ export function Index() {
                 <HomeLink name="Preguntas" icon="src/assets/question-mark-icon.png"/>
                 <HomeLink name="Logros" icon="src/assets/cup-icon.png"/>
             </div>
+            <img className="index-page__image index-page__image--ghost" src="src/assets/ghost.webp" />
         </div>
     );
 }

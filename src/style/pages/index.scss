@@ -1,4 +1,6 @@
 .index-page {
+    position: relative;
+    overflow: hidden;
     background-color: var(--theme-black);
     text-align: center;
     font-size: 18px;
@@ -10,7 +12,7 @@
         font-size: 60px;
     }
     &__button {
-        margin-bottom: 120px;
+        margin-bottom: 200px;
         padding: 20px 50px;
         border-radius: 12px;
         background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
@@ -25,8 +27,12 @@
             transform: rotate(25deg);
         }
         &--skullworm {
-            top: 125%;
+            top: 630px;
             left: -20%;
+        }
+        &--ghost {
+            bottom: 190px;
+            right: -300px;
         }
     }
 }
@@ -45,6 +51,7 @@
 .challenges-snippet {
     border-collapse: separate; 
     border-spacing: 0;
+    box-shadow: 4px 8px 4px rgba(82, 45, 0, 1);
     th, td {
         border-bottom: 1px solid #000;
         padding: 35px 8px;
@@ -64,6 +71,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 5% 65px;
+    box-shadow: -4px 8px 4px rgba(82, 45, 0, 1);
     &__title {
         max-width: 65%;
         font-family: Creepster;
@@ -86,9 +94,13 @@
 .home-link-container {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 200px;
 }
 
 .home-link {
+    position: relative;
+    z-index: 2;
+    box-shadow: 4px 8px 4px rgba(82, 45, 0, 1);
     width: 486px;
     font-family: Creepster;
     font-size: 60px;
