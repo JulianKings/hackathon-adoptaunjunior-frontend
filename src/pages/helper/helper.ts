@@ -1,12 +1,12 @@
 export interface HelperItemInterface {
   id: number;
-  username: string;
+  author: string;
   title: string;
   tags: string[];
   created_at: string;
   votes: number;
   views: number;
-  message:string;
+  content:string;
 }
 export interface UseDataModifiersReturn<T> {
   dataCurrentPage: T[];

@@ -38,7 +38,7 @@ export const Help: React.FC = () => {
                                 <img src={imgPath} alt="user profile pic help" />
                             </div>
                             <div className="help__content__info__user__name">
-                                {item.username}
+                                {item.author}
                             </div>
                             <div className="help__content__info__user__createdat">
                                 {item.created_at}
@@ -48,7 +48,7 @@ export const Help: React.FC = () => {
                             </div>
                         </div>
                         <div className="help__content__info__message">
-                            {item.message}
+                            {item.content}
                         </div>
                     </div>
                 </div>

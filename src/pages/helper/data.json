@@ -1,203 +1,203 @@
 [
     {
       "id": 1,
-      "username": "witchy_coder",
+      "author": "witchy_coder",
       "title": "Spooky Sorting Algorithms",
       "tags": ["algorithms", "sorting", "Halloween Challenge"],
       "created_at": "2024-10-20T00:00:00Z",
       "votes": 5,
       "views": 300,
-      "message": "I'm struggling to optimize the merge sort in this challenge—any tips for making it faster?"
+      "content": "I'm struggling to optimize the merge sort in this challenge—any tips for making it faster?"
     },
     {
       "id": 2,
-      "username": "ghostly_dev",
+      "author": "ghostly_dev",
       "title": "Haunted Binary Tree Traversal",
       "tags": ["trees", "binary tree", "Halloween Challenge"],
       "created_at": "2024-10-19T19:00:00Z",
       "votes": 2,
       "views": 150,
-      "message": "Is it better to use recursion or iteration for the traversal? I'm getting stuck on recursion limits."
+      "content": "Is it better to use recursion or iteration for the traversal? I'm getting stuck on recursion limits."
     },
     {
       "id": 3,
-      "username": "frankenstein_code",
+      "author": "frankenstein_code",
       "title": "Zombie Apocalypse Survival Simulation",
       "tags": ["simulation", "survival", "Halloween Challenge"],
       "created_at": "2024-10-18T15:30:00Z",
       "votes": 8,
       "views": 450,
-      "message": "What's the best way to handle pathfinding in a grid for the zombies? Any libraries recommended?"
+      "content": "What's the best way to handle pathfinding in a grid for the zombies? Any libraries recommended?"
     },
     {
       "id": 4,
-      "username": "batman_developer",
+      "author": "batman_developer",
       "title": "Witch's Brew: Recipe API",
       "tags": ["API", "recipe", "Halloween Challenge"],
       "created_at": "2024-10-17T11:00:00Z",
       "votes": 1,
       "views": 200,
-      "message": "How can I fetch recipes in batches to avoid hitting the API rate limit?"
+      "content": "How can I fetch recipes in batches to avoid hitting the API rate limit?"
     },
     {
       "id": 5,
-      "username": "pumpkin_master",
+      "author": "pumpkin_master",
       "title": "Creepy Code Review",
       "tags": ["review", "coding", "Halloween Challenge"],
       "created_at": "2024-10-16T09:15:00Z",
       "votes": 3,
       "views": 350,
-      "message": "What should I focus on first in a code review? Struggling with finding priority issues."
+      "content": "What should I focus on first in a code review? Struggling with finding priority issues."
     },
     {
       "id": 6,
-      "username": "halloween_hacker",
+      "author": "halloween_hacker",
       "title": "Trick or Treat: A Coding Adventure",
       "tags": ["adventure", "gaming", "Halloween Challenge"],
       "created_at": "2024-10-15T14:00:00Z",
       "votes": 7,
       "views": 220,
-      "message": "Can anyone suggest a way to create dynamic, Halloween-themed game levels for this?"
+      "content": "Can anyone suggest a way to create dynamic, Halloween-themed game levels for this?"
     },
     {
       "id": 7,
-      "username": "zombie_coder",
+      "author": "zombie_coder",
       "title": "AI in Zombie Defense",
       "tags": ["AI", "zombies", "Halloween Challenge"],
       "created_at": "2024-10-14T09:45:00Z",
       "votes": 10,
       "views": 500,
-      "message": "Should I go with a rule-based or ML-based AI approach for zombie behavior?"
+      "content": "Should I go with a rule-based or ML-based AI approach for zombie behavior?"
     },
     {
       "id": 8,
-      "username": "pumpkin_spice",
+      "author": "pumpkin_spice",
       "title": "Spiced Up Algorithms",
       "tags": ["algorithms", "spice", "Halloween Challenge"],
       "created_at": "2024-10-13T12:00:00Z",
       "votes": 4,
       "views": 180,
-      "message": "I'm struggling with complexity for this algorithm—any advice on minimizing runtime?"
+      "content": "I'm struggling with complexity for this algorithm—any advice on minimizing runtime?"
     },
     {
       "id": 9,
-      "username": "skeleton_developer",
+      "author": "skeleton_developer",
       "title": "Skeletons in the Closet: Refactoring",
       "tags": ["refactoring", "skeleton", "Halloween Challenge"],
       "created_at": "2024-10-12T08:30:00Z",
       "votes": 6,
       "views": 270,
-      "message": "What are some best practices for breaking down legacy code during refactoring?"
+      "content": "What are some best practices for breaking down legacy code during refactoring?"
     },
     {
       "id": 10,
-      "username": "vampire_dev",
+      "author": "vampire_dev",
       "title": "Bite-Sized Python Tips",
       "tags": ["python", "tips", "Halloween Challenge"],
       "created_at": "2024-10-11T10:15:00Z",
       "votes": 12,
       "views": 600,
-      "message": "Does anyone know a quick trick for optimizing Python loops in this challenge?"
+      "content": "Does anyone know a quick trick for optimizing Python loops in this challenge?"
     },
     {
       "id": 11,
-      "username": "mummy_coder",
+      "author": "mummy_coder",
       "title": "Unwrapping the Mystery of JavaScript",
       "tags": ["javascript", "mystery", "Halloween Challenge"],
       "created_at": "2024-10-10T15:45:00Z",
       "votes": 5,
       "views": 320,
-      "message": "Having trouble with closures in this challenge—how do they work exactly?"
+      "content": "Having trouble with closures in this challenge—how do they work exactly?"
     },
     {
       "id": 12,
-      "username": "goblin_dev",
+      "author": "goblin_dev",
       "title": "Goblin's Guide to SQL",
       "tags": ["SQL", "database", "Halloween Challenge"],
       "created_at": "2024-10-09T11:00:00Z",
       "votes": 3,
       "views": 210,
-      "message": "What’s the best approach for optimizing complex SQL joins in this challenge?"
+      "content": "What’s the best approach for optimizing complex SQL joins in this challenge?"
     },
     {
       "id": 13,
-      "username": "werewolf_programmer",
+      "author": "werewolf_programmer",
       "title": "Howl at the Moon: Web Dev Essentials",
       "tags": ["web development", "essentials", "Halloween Challenge"],
       "created_at": "2024-10-08T17:30:00Z",
       "votes": 9,
       "views": 400,
-      "message": "Is there a quick way to improve web performance for this project?"
+      "content": "Is there a quick way to improve web performance for this project?"
     },
     {
       "id": 14,
-      "username": "cursed_dev",
+      "author": "cursed_dev",
       "title": "Cursed Code Practices to Avoid",
       "tags": ["best practices", "cursed", "Halloween Challenge"],
       "created_at": "2024-10-07T13:15:00Z",
       "votes": 4,
       "views": 190,
-      "message": "What are some 'cursed' coding practices I should avoid in my code review?"
+      "content": "What are some 'cursed' coding practices I should avoid in my code review?"
     },
     {
       "id": 15,
-      "username": "spooky_dev",
+      "author": "spooky_dev",
       "title": "Ghosts of Past Projects: Lessons Learned",
       "tags": ["lessons", "projects", "Halloween Challenge"],
       "created_at": "2024-10-06T16:00:00Z",
       "votes": 11,
       "views": 450,
-      "message": "Any advice on avoiding the same mistakes I made in my last project?"
+      "content": "Any advice on avoiding the same mistakes I made in my last project?"
     },
     {
       "id": 16,
-      "username": "haunting_dev",
+      "author": "haunting_dev",
       "title": "Haunting Your Code: Debugging Tips",
       "tags": ["debugging", "tips", "Halloween Challenge"],
       "created_at": "2024-10-05T14:30:00Z",
       "votes": 2,
       "views": 160,
-      "message": "What's the best way to track down a spooky, intermittent bug in this challenge?"
+      "content": "What's the best way to track down a spooky, intermittent bug in this challenge?"
     },
     {
       "id": 17,
-      "username": "vampire_hacker",
+      "author": "vampire_hacker",
       "title": "Nightmare Fuel: Security Best Practices",
       "tags": ["security", "best practices", "Halloween Challenge"],
       "created_at": "2024-10-04T18:00:00Z",
       "votes": 15,
       "views": 700,
-      "message": "Any security recommendations to prevent SQL injection in this challenge?"
+      "content": "Any security recommendations to prevent SQL injection in this challenge?"
     },
     {
       "id": 18,
-      "username": "phantom_programmer",
+      "author": "phantom_programmer",
       "title": "Phantom Frameworks: What's Hot?",
       "tags": ["frameworks", "trends", "Halloween Challenge"],
       "created_at": "2024-10-03T20:00:00Z",
       "votes": 1,
       "views": 120,
-      "message": "I'm new to frameworks—should I go with React or Vue for this challenge?"
+      "content": "I'm new to frameworks—should I go with React or Vue for this challenge?"
     },
     {
       "id": 19,
-      "username": "creepy_coder",
+      "author": "creepy_coder",
       "title": "Creepy Crawlies in Your Codebase",
       "tags": ["codebase", "bugs", "Halloween Challenge"],
       "created_at": "2024-10-02T21:15:00Z",
       "votes": 7,
       "views": 280,
-      "message": "How do I identify and remove lurking bugs effectively in this codebase?"
+      "content": "How do I identify and remove lurking bugs effectively in this codebase?"
     },
     {
       "id": 20,
-      "username": "zombie_hacker",
+      "author": "zombie_hacker",
       "title": "Post-Mortem: Evaluating Your Work",
       "tags": ["evaluation", "work", "Halloween Challenge"],
       "created_at": "2024-10-01T23:00:00Z",
       "votes": 6,
       "views": 330,
-      "message": "What's the best way to assess code quality in a project post-mortem?"
+      "content": "What's the best way to assess code quality in a project post-mortem?"
     }
   ]
   

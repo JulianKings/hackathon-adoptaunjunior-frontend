@@ -86,7 +86,7 @@ export const Helper: React.FC = () => {
                                 <strong>{item.title}</strong> <span>({item.tags.join(', ')})</span>
                             </div>
                             <div>
-                                <em>{item.username} - {new Date(item.created_at).toLocaleString()}</em>
+                                <em>{item.author} - {new Date(item.created_at).toLocaleString()}</em>
                             </div>
                         </div>
                         <div className="helper__list__item__userstats">
