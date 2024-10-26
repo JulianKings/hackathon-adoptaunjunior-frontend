@@ -72,7 +72,7 @@ export const Login = () => {
 
                     <div className="button__group">
                         <button type="submit" className="button">LOGIN</button>
-                        <button type="button" className="button register-button" onClick={handleRegisterClick}>REGISTER</button>
+                        <button type="button" className="button register-button" onClick={handleRegisterClick}>SIGN UP</button>
                     </div>
                 </form>
             </div>
