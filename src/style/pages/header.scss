@@ -4,6 +4,7 @@
     &__container {
         display: flex;
         justify-content: space-around;
+        align-items: center;
         max-width: 510px;
         margin: 0 auto;
     }
@@ -12,8 +13,12 @@
     }
     &__icon {
         display: block;
-        width: 80px;
-        height: 80px;
+        margin: 15px 0;
+        &--skull {
+            width: 80px;
+            height: 80px;
+            margin: unset;
+        }
     }
     &__page-link {
         font-family: Raleway;

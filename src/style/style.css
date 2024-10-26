@@ -249,6 +249,7 @@
 .header__container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   max-width: 510px;
   margin: 0 auto;
 }
@@ -257,8 +258,12 @@
 }
 .header__icon {
   display: block;
+  margin: 15px 0;
+}
+.header__icon--skull {
   width: 80px;
   height: 80px;
+  margin: unset;
 }
 .header__page-link {
   font-family: Raleway;
