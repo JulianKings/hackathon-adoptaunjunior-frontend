@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; 
 import "./login.scss";
 
 export const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [errors, setErrors] = useState({ email: "", password: "" });
+    const navigate = useNavigate(); 
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -39,9 +41,12 @@ export const Login = () => {
         }
     };
 
+    const handleRegisterClick = () => {
+        navigate("/signup"); 
+    };
+
     return (
         <div className="container">
-            <img src="./../../assets/HALLO.png" alt="" />
             <div className="form__container">
                 <h2 className="title">LOGIN</h2>
                 <form onSubmit={handleSubmit}>
@@ -65,7 +70,10 @@ export const Login = () => {
                     />
                     {errors.password && <p className="error-message">{errors.password}</p>}
 
-                    <button type="submit" className="button">LOGIN</button>
+                    <div className="button__group">
+                        <button type="submit" className="button">LOGIN</button>
+                        <button type="button" className="button register-button" onClick={handleRegisterClick}>REGISTER</button>
+                    </div>
                 </form>
             </div>
         </div>
