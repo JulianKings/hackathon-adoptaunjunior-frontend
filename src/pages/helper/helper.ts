@@ -1,12 +1,20 @@
+enum IssueStatus {
+  open = "open",
+  in_progress = "in_progress",
+  solved = "solved",
+  closed = "closed"
+}
+
 export interface HelperItemInterface {
   id: number;
-  username: string;
+  author: string;
   title: string;
   tags: string[];
   created_at: string;
   votes: number;
   views: number;
-  message:string;
+  content: string;
+  status?: IssueStatus; 
 }
 export interface UseDataModifiersReturn<T> {
   dataCurrentPage: T[];
