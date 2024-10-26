@@ -242,6 +242,13 @@
   margin-bottom: 45px;
 }
 
+.header {
+  background-color: blue;
+}
+.header__icon {
+  width: 10px;
+}
+
 :root {
   --theme-black: #2B2B2B;
   --theme-white: #FFFBE8;

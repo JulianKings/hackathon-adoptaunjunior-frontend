@@ -3,17 +3,15 @@ import { NavLink } from "react-router-dom";
 
 export function Header() {
     return (
-        <header>
-            Page Header <br />
-            <NavLink to='/'>Home</NavLink>
+        <header className="header">
+            <div className="header__link-container">
+                <img className="header__icon" src="/src/assets/skull.png" />
+                <NavLink to='/'>Inicio</NavLink>
+            </div>
              |  
-            <NavLink to='/solutions'>Solutions</NavLink>
-             |  
-            <NavLink to='/challenges'>Challenges</NavLink>
+            <NavLink to='/challenges'>Trucos</NavLink>
              | 
-            <NavLink to='/resources'>Resources</NavLink>
-             | 
-            <NavLink to='/help'>Help</NavLink>
+            <NavLink to='/resources'>Tratos</NavLink>
              | 
             <NavLink to='/signup'>Sign Up</NavLink>
              | 
