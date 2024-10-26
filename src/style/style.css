@@ -271,6 +271,14 @@
   color: var(--theme-white);
 }
 
+.footer {
+  display: flex;
+  background-color: var(--theme-black);
+  color: var(--theme-white);
+  justify-content: space-around;
+  padding: 20px 35% 30px;
+}
+
 :root {
   --theme-black: #2B2B2B;
   --theme-white: #FFFBE8;
