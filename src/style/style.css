@@ -243,10 +243,27 @@
 }
 
 .header {
-  background-color: blue;
+  background-color: var(--theme-black);
+  padding: 90px 0 120px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 510px;
+  margin: 0 auto;
+}
+.header__link-container {
+  text-align: center;
 }
 .header__icon {
-  width: 10px;
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+.header__page-link {
+  font-family: Raleway;
+  text-decoration: none;
+  color: var(--theme-white);
 }
 
 :root {
