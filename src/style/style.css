@@ -325,6 +325,43 @@
   margin-bottom: 45px;
 }
 
+.header {
+  background-color: var(--theme-black);
+  padding: 90px 0 120px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 510px;
+  margin: 0 auto;
+}
+.header__link-container {
+  text-align: center;
+}
+.header__icon {
+  display: block;
+  margin: 15px 0;
+}
+.header__icon--skull {
+  width: 80px;
+  height: 80px;
+  margin: unset;
+}
+.header__page-link {
+  font-family: Raleway;
+  text-decoration: none;
+  color: var(--theme-white);
+}
+
+.footer {
+  display: flex;
+  background-color: var(--theme-black);
+  color: var(--theme-white);
+  justify-content: space-around;
+  padding: 20px 35% 30px;
+}
+
 :root {
   --theme-black: #2B2B2B;
   --theme-white: #FFFBE8;
