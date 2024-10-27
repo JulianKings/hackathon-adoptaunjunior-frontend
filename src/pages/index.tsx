@@ -1,7 +1,7 @@
 import React from "react";
-import { ChallengesSnippet } from "../components/ChallengesSnippet";
-import { ResourcesSnippet } from "../components/ResourcesSnippet";
-import { HomeLink } from "../components/HomeLink";
+import { ChallengesSnippet } from "../components/index/ChallengesSnippet";
+import { ResourcesSnippet } from "../components/index/ResourcesSnippet";
+import { HomeLink } from "../components/index/HomeLink";
 
 export function Index() {
     return (

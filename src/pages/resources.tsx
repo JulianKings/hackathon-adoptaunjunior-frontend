@@ -1,22 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { SingleResource } from "../components/resouces/SingleResource";
+import { SingleResource } from "../components/resources/SingleResource";
 
 const resources = [
     {
         title: "¿Ejercicios o proyectos?",
         description: "La espeluznante pregunta que todos nos hacemos. ¿Por qué aprender algoritmos o bucles en lugar de construir algo? Aquí te explicamos por qué.",
-        image: "public/assets/resource-mock-image.png"
+        image: "/assets/resource-mock-image.png"
     },
     {
         title: "Cómo planificar tu entrenamiento",
         description: "Frankenstein y Drácula fracasaron porque no tenían un plan bien definido. Pero tú quieres ser diferente, ¿O no?",
-        image: "public/assets/resource-mock-image.png"
+        image: "/assets/resource-mock-image.png"
     },
     {
         title: "Cómo planificar tu entrenamiento",
         description: "Frankenstein y Drácula fracasaron porque no tenían un plan bien definido. Pero tú quieres ser diferente, ¿O no?",
-        image: "public/assets/resource-mock-image.png"
+        image: "/assets/resource-mock-image.png"
     }
 ];
 
