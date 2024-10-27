@@ -17,7 +17,22 @@ const resources = [
         title: "Cómo planificar tu entrenamiento",
         description: "Frankenstein y Drácula fracasaron porque no tenían un plan bien definido. Pero tú quieres ser diferente, ¿O no?",
         image: "/assets/resource-mock-image.png"
-    }
+    },
+    {
+        title: "¿Ejercicios o proyectos?",
+        description: "La espeluznante pregunta que todos nos hacemos. ¿Por qué aprender algoritmos o bucles en lugar de construir algo? Aquí te explicamos por qué.",
+        image: "/assets/resource-mock-image.png"
+    },
+    {
+        title: "Cómo planificar tu entrenamiento",
+        description: "Frankenstein y Drácula fracasaron porque no tenían un plan bien definido. Pero tú quieres ser diferente, ¿O no?",
+        image: "/assets/resource-mock-image.png"
+    },
+    {
+        title: "Cómo planificar tu entrenamiento",
+        description: "Frankenstein y Drácula fracasaron porque no tenían un plan bien definido. Pero tú quieres ser diferente, ¿O no?",
+        image: "/assets/resource-mock-image.png"
+    },
 ];
 
 

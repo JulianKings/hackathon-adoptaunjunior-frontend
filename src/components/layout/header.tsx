@@ -22,6 +22,10 @@ export function Header() {
                     <NavLink className="header__page-link" to='/resources'>Tratos</NavLink>
                 </div>
                 <div className="header__link-container">
+                    <NavLink to="/resources"><img className="header__icon" src="/src/assets/help.png" /></NavLink>
+                    <NavLink className="header__page-link" to='/help'>Ayuda</NavLink>
+                </div>
+                <div className="header__link-container">
                     <NavLink to="/signup"><img className="header__icon" src="/src/assets/account.png" /></NavLink>
                     <NavLink className="header__page-link" to='/signup'>Registro</NavLink>
                 </div>
