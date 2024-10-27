@@ -1,9 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export function Header() {
+
+    const location = useLocation();
+    const headerClass = location.pathname === '/' ? 'header--home' : 'header--default';
+
     return (
-        <header className="header">
+        <header className={`header ${headerClass}`}>
             <div className="header__container">
                 <div className="header__link-container">
                     <NavLink to="/"><img className="header__icon header__icon--skull" src="/src/assets/skull.png" /></NavLink>
