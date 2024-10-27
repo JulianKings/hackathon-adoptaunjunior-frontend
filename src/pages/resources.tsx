@@ -24,14 +24,17 @@ const resources = [
 export function Resources() {
     return (
         <div className="resources">
-            {resources.map((resource, index) => (
-                <SingleResource
-                    key={index}
-                    image={resource.image}
-                    title={resource.title}
-                    description={resource.description}
-                />
-            ))}
+            <h1 className="resources__title">Tratos</h1>
+            <div className="resources__grid">
+                {resources.map((resource, index) => (
+                    <SingleResource
+                        key={index}
+                        image={resource.image}
+                        title={resource.title}
+                        description={resource.description}
+                    />
+                ))}
+            </div>
         </div>
     );
 }   

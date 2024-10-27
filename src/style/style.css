@@ -374,6 +374,10 @@
 }
 
 .resources {
+  text-align: center;
+}
+
+.resources__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 125px 5%;
@@ -381,12 +385,12 @@
   align-items: center;
   background-color: var(--theme-orange);
 }
-.resources__single {
+.resources__grid__single {
   margin-bottom: 80px;
   padding: 0 15%;
   text-align: center;
 }
-.resources__single__text-container {
+.resources__grid__single__text-container {
   height: 265px;
   transform: translate(0, -5px);
   padding: 35px 10% 60px;
@@ -395,20 +399,20 @@
   background-color: var(--theme-black);
   color: var(--theme-white);
 }
-.resources img {
+.resources__grid img {
   width: 535px;
   background-color: var(--theme-black);
   border-top-left-radius: 46px;
   border-top-right-radius: 46px;
 }
-.resources h2 {
+.resources__grid h2 {
   max-width: 70%;
   margin: 0 auto;
   margin-bottom: 25px;
   font-family: Creepster;
   font-size: 36px;
 }
-.resources p {
+.resources__grid p {
   padding: 0 5%;
 }
 
