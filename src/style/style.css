@@ -326,8 +326,14 @@
 }
 
 .header {
+  padding: 30px 0 30px;
+}
+.header--home {
+  padding-bottom: 120px;
   background-color: var(--theme-black);
-  padding: 90px 0 120px;
+}
+.header--default {
+  background-color: var(--theme-orange);
 }
 .header__container {
   display: flex;
@@ -356,10 +362,15 @@
 
 .footer {
   display: flex;
-  background-color: var(--theme-black);
   color: var(--theme-white);
   justify-content: space-around;
   padding: 20px 35% 30px;
+}
+.footer--home {
+  background-color: var(--theme-black);
+}
+.footer--default {
+  background-color: var(--theme-orange);
 }
 
 :root {
