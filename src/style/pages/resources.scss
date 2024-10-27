@@ -1,14 +1,20 @@
 .resources {
     text-align: center;
+    background-color: var(--theme-orange);
+    &__title {
+        font-family: Sancreek;
+        font-size: 60px;
+        margin-bottom: 70px;
+        padding-top: 50px;
+    }
 }
 
 .resources__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 125px 5%;
+    padding: 0 5%;
     justify-items: center;
     align-items: center;
-    background-color: var(--theme-orange);
     &__single {
         margin-bottom: 80px;
         padding: 0 15%;
@@ -38,5 +44,6 @@
     }
     p {
         padding: 0 5%;
+        font-family: Raleway;
     }
 }
