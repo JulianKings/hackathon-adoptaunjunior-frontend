@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import data from './data.json';
 import { HelperItemInterface, SortConfig} from "./helper.ts";
 import { useDataModifiers } from "./useDataModifiers";
+import imgPath from '../../assets/user_default_pic.webp'; 
 const helperitems: HelperItemInterface[] = data;
 
 export const Helper: React.FC = () => {
@@ -38,7 +39,6 @@ export const Helper: React.FC = () => {
 
     return (
         <div className="helper">
-            <h2>Help Page</h2>
             <div className="helper__modifiers">
                 <div>
                     <button
@@ -78,7 +78,7 @@ export const Helper: React.FC = () => {
                     <NavLink to={`/help/${item.id}`} key={item.id} className="helper__list__item">
                         <div className="helper__list__item__userpic">
                             <div>
-                                <img src="src/assets/user_default_pic.webp" alt="user profile pic" />
+                                <img src={imgPath} alt="user profile pic" />
                             </div>
                         </div>
                         <div className="helper__list__item__userinfo">
@@ -86,7 +86,7 @@ export const Helper: React.FC = () => {
                                 <strong>{item.title}</strong> <span>({item.tags.join(', ')})</span>
                             </div>
                             <div>
-                                <em>{item.username} - {new Date(item.created_at).toLocaleString()}</em>
+                                <em>{item.author} - {new Date(item.created_at).toLocaleString()}</em>
                             </div>
                         </div>
                         <div className="helper__list__item__userstats">
