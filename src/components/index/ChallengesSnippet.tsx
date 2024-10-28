@@ -90,7 +90,7 @@ export function ChallengesSnippet() {
                     </tr>
                 </thead>
                 <tbody>
-                    {challenges.map((challenge, index) => (
+                    {challenges.slice(0,4).map((challenge, index) => (
                         <tr>
                             <td>{index + 1}.</td>
                             <td>{challenge.title}</td>
