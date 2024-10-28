@@ -83,7 +83,9 @@
         width: 280px;
         height: 196px;
         margin-bottom: 22px;
-        object-fit: cover;
+        object-fit: contain;
+        background: var(--theme-black);
+        border-radius: 8px;
     }
     &__description {
         max-width: 250px;

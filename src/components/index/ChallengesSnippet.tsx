@@ -15,9 +15,9 @@ export function ChallengesSnippet() {
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Rank</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Rango</th>
                         <th>Done</th>
                     </tr>
                 </thead>
