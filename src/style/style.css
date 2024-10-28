@@ -341,6 +341,10 @@
   padding: 70px 5%;
   background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
   text-align: center;
+  transition: transform 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+}
+.home-link:hover {
+  transform: scale(1.15);
 }
 .home-link__title {
   margin-bottom: 45px;
