@@ -2,40 +2,52 @@ import React, { useState } from "react";
 import "./signup.scss";
 
 export const Signup = () => {
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [errors, setErrors] = useState({ email: "", password: "" });
+    const [experience, setExperience] = useState("");
+    const [errors, setErrors] = useState({ name: "", email: "", password: "", experience: "" });
+
+    const handleNameChange = (e) => {
+        setName(e.target.value);
+        setErrors((prevErrors) => ({ ...prevErrors, name: e.target.value ? "" : "Name is required" }));
+    };
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
-        if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(e.target.value)) {
-            setErrors((prevErrors) => ({ ...prevErrors, email: "Invalid email format" }));
-        } else {
-            setErrors((prevErrors) => ({ ...prevErrors, email: "" }));
-        }
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            email: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(e.target.value) ? "" : "Invalid email format",
+        }));
     };
 
     const handlePasswordChange = (e) => {
         setPassword(e.target.value);
-        if (e.target.value.length < 6) {
-            setErrors((prevErrors) => ({ ...prevErrors, password: "Password must be at least 6 characters" }));
-        } else {
-            setErrors((prevErrors) => ({ ...prevErrors, password: "" }));
-        }
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            password: e.target.value.length >= 6 ? "" : "Password must be at least 6 characters",
+        }));
+    };
+
+    const handleExperienceChange = (e) => {
+        setExperience(e.target.value);
+        setErrors((prevErrors) => ({ ...prevErrors, experience: e.target.value ? "" : "Experience is required" }));
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!email || !password) {
+        if (!name || !email || !password || !experience) {
             setErrors({
+                name: !name ? "Name is required" : errors.name,
                 email: !email ? "Email is required" : errors.email,
                 password: !password ? "Password is required" : errors.password,
+                experience: !experience ? "Experience is required" : errors.experience,
             });
             return;
         }
 
-        if (!errors.email && !errors.password) {
-            alert("Login successful!");
+        if (!errors.name && !errors.email && !errors.password && !errors.experience) {
+            alert("Registration successful!");
         }
     };
 
@@ -44,6 +56,16 @@ export const Signup = () => {
             <div className="form__container">
                 <h2 className="title">SIGN UP</h2>
                 <form onSubmit={handleSubmit}>
+                    <p className="title__input">Name</p>
+                    <input
+                        type="text"
+                        placeholder="Enter your name"
+                        className="input"
+                        value={name}
+                        onChange={handleNameChange}
+                    />
+                    {errors.name && <p className="error-message">{errors.name}</p>}
+
                     <p className="title__input">Email</p>
                     <input
                         type="text"
@@ -63,6 +85,20 @@ export const Signup = () => {
                         onChange={handlePasswordChange}
                     />
                     {errors.password && <p className="error-message">{errors.password}</p>}
+
+                    <p className="title__input">Experience</p>
+                    <select
+                        className="input"
+                        value={experience}
+                        onChange={handleExperienceChange}
+                    >
+                        <option value="" disabled>Select your experience</option>
+                        <option value="student">Student</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                        <option value="manager">Product Manager</option>
+                    </select>
+                    {errors.experience && <p className="error-message">{errors.experience}</p>}
 
                     <button type="submit" className="button">SIGN UP</button>
                 </form>
