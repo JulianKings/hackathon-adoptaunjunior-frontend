@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { SingleResource } from "../components/resources/SingleResource";
 import { ApiResourceInterface } from "../interfaces/resource";
 
