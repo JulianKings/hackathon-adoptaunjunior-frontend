@@ -1,0 +1,196 @@
+@use 'helper';
+.challenges{
+    width: 100%;
+    background: helper.$orange;
+    padding: 1em 0;
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 3.5em;
+        margin-top: 5em;
+        &__card{
+            width: 21.5em;
+            height: 25.188em;
+            background:#2B2B2B;
+            margin: 0 auto;
+            padding: 1em;
+            border-radius: 1em;
+            position: relative;
+            box-shadow: -1px 8px 10.1px 5px rgba(0, 0, 0, 0.25);
+            &:hover{
+                background: linear-gradient(to bottom, #2B2B2B 0%, #4F3591 100%);
+            }
+            &__top{
+                width: 100%;
+                height: max-content;
+                display: flex;
+                justify-content: space-between;
+                &__difficulty{
+                    & img{
+                        margin-right: .2em;
+                    }
+                }
+                &__infoTopRight{
+                    display: flex;
+                    & div{
+                        font-family: 'creepster';
+                        font-size: 1.25rem;
+                        line-height: 1.44rem;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        & img{
+                            margin-right: .3em;
+                        }
+                        & span{
+                            text-shadow: 
+                            1px 1px 0 #000,   
+                            -1px 1px 0 #000,
+                            1px -1px 0 #000,
+                            -1px -1px 0 #000,
+                            1px 0 0 #000,
+                            -1px 0 0 #000,
+                            0 1px 0 #000,
+                            0 -1px 0 #000; 
+                        }
+                    }
+                    & div:nth-child(1){
+                        margin-right: .5em;
+                    }
+                }
+            }
+            &__middle{
+                margin-top: 1em;
+                padding: 0 1.3em;
+                &__head{
+                    display: flex;
+                    align-items: center;
+                    & img{
+                        width: 140.3px;
+                        height: 140px;
+                    }
+                    & h2{
+                        font-family: 'creepster';
+                        font-size: 1.50rem;
+                        line-height: 1.75rem;
+                        color: #fff;
+                        text-shadow: 9px 9px 8px black;
+                    }
+                }
+                & p{
+                    color: #fff;
+                    line-height: 1.13rem;
+                    font-size: 0.94rem;
+                    font-family: 'raleway';
+                    margin-top: .5em;
+                    word-spacing: 3px;
+                    font-weight: 100;
+                }
+                &__tags{
+                    width: max-content;
+                    height: max-content;
+                    margin-top: .5em;
+                    & div{
+                        width: max-content;
+                        height: 1.5em;
+                        padding: 0 1em;
+                        font-family: 'creepster';
+                        font-size: 1rem;
+                        display: inline-block;
+                        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+                        border-radius: 9999px;
+                        margin-right: .5em;
+                        background-color: #FF981B;
+                        color: #fff;
+                        & span{
+                            text-shadow: 
+                            1px 1px 0 #000,   
+                            -1px 1px 0 #000,
+                            1px -1px 0 #000,
+                            -1px -1px 0 #000,
+                            1px 0 0 #000,
+                            -1px 0 0 #000,
+                            0 1px 0 #000,
+                            0 -1px 0 #000; 
+                            line-height: 1.5em;
+                        }
+                    }
+                }
+            }
+            &__btndetails{
+                width: 11em;
+                height: 2.519em;
+                background: linear-gradient(to bottom, #875BF7 15%, #4F3591 100%);
+                border-radius: 9999px;
+                padding: 0 1em;
+                margin-top: 1em;;
+                margin-bottom: 1em;
+                margin-right: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                & img{
+                    margin-right: .5em;
+                }
+                & span{
+                    font-family: 'creepster';
+                    font-size: 0.88rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &__pagination{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2em 0;
+        & img{
+            width: 30px;
+            height: 30px;
+        }
+        & img[alt="back"]{
+            rotate: 135deg;
+            margin-right: 1em;
+        }
+        & img[alt="next"]{
+            rotate: -45deg;
+            margin-left: 1em;
+        }
+        &__numbers{
+            display: flex;
+            gap: 1em;
+            & div{
+                font-family: 'creepster';
+                font-size: 2rem;
+                color: #2B2B2B;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .challenges{
+        &__grid{
+            margin: 0 auto;
+            width: max-content;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .challenges{
+        &__grid{
+            margin: 0 auto;
+            width: max-content;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}

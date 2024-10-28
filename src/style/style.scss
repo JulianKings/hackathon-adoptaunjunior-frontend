@@ -1,4 +1,7 @@
 @import 'pages/helper';
+@import 'pages/challenges';
+@import 'pages/challenge';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,4 +12,3 @@
 body {
     font-family: 'Calibri', sans-serif;
 }
-
