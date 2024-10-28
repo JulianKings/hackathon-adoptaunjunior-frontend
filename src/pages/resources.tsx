@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SingleResource } from "../components/resources/SingleResource";
+import { ApiResourceInterface } from "../interfaces/resource";
 
-const resources = [
+const resources: ApiResourceInterface[] = [
     {
         id: 1,
         created_at: new Date('2024-10-21T10:30:00Z'),
@@ -78,6 +79,7 @@ const resources = [
 ];
 
 
+
 export function Resources() {
     return (
         <div className="resources">
@@ -85,10 +87,16 @@ export function Resources() {
             <div className="resources__grid">
                 {resources.map((resource, index) => (
                     <SingleResource
-                        key={index}
-                        image={resource.image}
+                        id={resource.id}
+                        created_at={resource.created_at}
+                        updated_at={resource.updated_at}
                         title={resource.title}
                         description={resource.description}
+                        content={resource.content}
+                        published={resource.published}
+                        type={resource.type}
+                        url={resource.url}
+                        image={resource.image}
                     />
                 ))}
             </div>
