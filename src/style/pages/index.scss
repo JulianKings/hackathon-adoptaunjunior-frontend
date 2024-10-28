@@ -17,6 +17,11 @@
         border-radius: 12px;
         background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
         font-size: 24px;
+        cursor: pointer;
+        transition: transform 0.7s ease;
+        &:hover {
+            transform: scale(1.25);
+        }
     }
     &__image {
         position: absolute;
@@ -64,6 +69,14 @@
     } 
     th:last-child, td:last-child {
         padding-right: 60px;
+    }
+    tr:not(:has(th)) {
+        transition: box-shadow 0.3s ease;
+        &:hover {
+            background-color: #935407;
+            color: #dad5d5;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
     }
 }
 

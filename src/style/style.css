@@ -229,6 +229,11 @@
   border-radius: 12px;
   background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
   font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.7s ease;
+}
+.index-page__button:hover {
+  transform: scale(1.25);
 }
 .index-page__image {
   position: absolute;
@@ -276,6 +281,14 @@
 }
 .challenges-snippet th:last-child, .challenges-snippet td:last-child {
   padding-right: 60px;
+}
+.challenges-snippet tr:not(:has(th)) {
+  transition: box-shadow 0.3s ease;
+}
+.challenges-snippet tr:not(:has(th)):hover {
+  background-color: #935407;
+  color: #dad5d5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .resources-snippet {
