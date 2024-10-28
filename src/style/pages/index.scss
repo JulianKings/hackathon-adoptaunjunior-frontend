@@ -85,6 +85,12 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 5% 65px;
     box-shadow: -4px 8px 4px rgba(82, 45, 0, 1);
+    &__single-container {
+        transition: transform 0.7s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
     &__title {
         max-width: 65%;
         font-family: Creepster;

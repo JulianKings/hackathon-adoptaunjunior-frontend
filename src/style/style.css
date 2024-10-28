@@ -297,6 +297,12 @@
   padding: 5% 65px;
   box-shadow: -4px 8px 4px rgb(82, 45, 0);
 }
+.resources-snippet__single-container {
+  transition: transform 0.7s ease;
+}
+.resources-snippet__single-container:hover {
+  transform: scale(1.2);
+}
 .resources-snippet__title {
   max-width: 65%;
   font-family: Creepster;
