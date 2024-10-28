@@ -229,6 +229,11 @@
   border-radius: 12px;
   background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
   font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.7s ease;
+}
+.index-page__button:hover {
+  transform: scale(1.25);
 }
 .index-page__image {
   position: absolute;
@@ -277,12 +282,26 @@
 .challenges-snippet th:last-child, .challenges-snippet td:last-child {
   padding-right: 60px;
 }
+.challenges-snippet tr:not(:has(th)) {
+  transition: box-shadow 0.3s ease;
+}
+.challenges-snippet tr:not(:has(th)):hover {
+  background-color: #935407;
+  color: #dad5d5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
 
 .resources-snippet {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 5% 65px;
   box-shadow: -4px 8px 4px rgb(82, 45, 0);
+}
+.resources-snippet__single-container {
+  transition: transform 0.7s ease;
+}
+.resources-snippet__single-container:hover {
+  transform: scale(1.2);
 }
 .resources-snippet__title {
   max-width: 65%;
@@ -295,7 +314,9 @@
   width: 280px;
   height: 196px;
   margin-bottom: 22px;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--theme-black);
+  border-radius: 8px;
 }
 .resources-snippet__description {
   max-width: 250px;
@@ -320,6 +341,10 @@
   padding: 70px 5%;
   background: linear-gradient(to bottom, #FF981B 0%, #D57F17 76%, #995B10 100%);
   text-align: center;
+  transition: transform 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+}
+.home-link:hover {
+  transform: scale(1.15);
 }
 .home-link__title {
   margin-bottom: 45px;
