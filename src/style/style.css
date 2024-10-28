@@ -395,6 +395,7 @@
   margin-bottom: 80px;
   padding: 0 15%;
   text-align: center;
+  cursor: pointer;
 }
 .resources__grid__single__text-container {
   height: 265px;
@@ -407,6 +408,7 @@
 }
 .resources__grid img {
   width: 535px;
+  height: 300px;
   background-color: var(--theme-black);
   border-top-left-radius: 46px;
   border-top-right-radius: 46px;
