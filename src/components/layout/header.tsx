@@ -26,10 +26,6 @@ export function Header() {
                     <NavLink className="header__page-link" to='/help'>Ayuda</NavLink>
                 </div>
                 <div className="header__link-container">
-                    <NavLink to="/signup"><img className="header__icon" src="/src/assets/account.png" /></NavLink>
-                    <NavLink className="header__page-link" to='/signup'>Registro</NavLink>
-                </div>
-                <div className="header__link-container">
                     <NavLink to="/login"><img className="header__icon" src="/src/assets/login.png" /></NavLink>
                     <NavLink className="header__page-link" to='/login'>Login</NavLink>
                 </div>
