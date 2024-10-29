@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  color: var(--theme-white);
+  justify-content: space-around;
+  padding: 20px 35% 30px;
+}
+.footer--home {
+  background-color: var(--theme-black);
+}
+.footer--default {
+  background-color: var(--theme-orange);
+}/*# sourceMappingURL=footer.css.map */

@@ -57,12 +57,6 @@
   margin-top: 0.625rem;
 }
 
-.button__group {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
 .error-message {
   color: #d93838;
   font-size: 1.2rem;
@@ -85,4 +79,4 @@
   .error-message {
     font-size: 1rem;
   }
-}/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=signup.css.map */

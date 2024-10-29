@@ -1,18 +1,16 @@
 import { useState, useMemo } from 'react';
-import { SortConfig, SearchConfig, UseDataModifiersReturn } from './helper.ts';
-
+import { SortConfig, SearchConfig, UseDataModifiersReturn,HelperItemInterface } from './helper.ts';
 const getNestedProperty = (obj: any, propertyPath: string | undefined): any => {
   if (propertyPath === undefined) return;
   return propertyPath.split('.').reduce((acc, part) => acc && acc[part], obj);
 };
 export const useDataModifiers = <T,>(
-  items: any[],
+  items: HelperItemInterface[],
   itemsPerPage: number,
   sortConfig?: SortConfig,
   searchConfig?: SearchConfig,
 ): UseDataModifiersReturn<T> => {
   const [page, setPage] = useState<number>(1);
-
   const { dataCurrentPage, totalPages, dataLength } = useMemo(() => {
     if (!items) return { dataCurrentPage: [], totalPages: 0, dataLength: 0 };
 

@@ -7,8 +7,8 @@ enum IssueStatus {
 
 export interface HelperItemInterface {
   id: number;
-  author: string;
-  title: string;
+  author: {name:string,profile_picture?:string};
+  subject: string;
   tags: string[];
   created_at: string;
   votes: number;
