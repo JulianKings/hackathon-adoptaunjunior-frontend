@@ -61,7 +61,6 @@ export const Login = () => {
             } else {
                 // no internet connection?
             }
-            console.log(result);
         }
     };
 
