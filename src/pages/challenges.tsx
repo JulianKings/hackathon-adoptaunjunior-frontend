@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 //Imports Images
 import difficultyPoints from "../assets/images/icons/tumba.svg";
 import favorite from "../assets/images/icons/favorite.svg";
@@ -10,6 +10,10 @@ import batarrow from "../assets/images/icons/batarrow.svg";
 
 export function Challenges() {
     const dataTest = [1,2,3,4,5,6,7,8,9,10];
+    const navigate = useNavigate();
+    const handleNavigate = () => {
+        navigate('/challenges/1');
+    }
 
     return (
         <section className="challenges">
@@ -18,7 +22,7 @@ export function Challenges() {
             <div className="challenges__grid">
                 {dataTest.slice(0,6).map(() => {
                     return (
-                        <div className="challenges__grid__card">
+                        <div className="challenges__grid__card" onClick={handleNavigate}>
                             <div className="challenges__grid__card__top">
                                 <div className="challenges__grid__card__top__difficulty">
                                     <img src={difficultyPoints} alt="difficulty points" />
