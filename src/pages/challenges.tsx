@@ -13,6 +13,7 @@ export function Challenges() {
 
     return (
         <section className="challenges">
+            <h1 className="challenges__title">Tratos</h1>
             {/* Grid */}
             <div className="challenges__grid">
                 {dataTest.slice(0,6).map(() => {
