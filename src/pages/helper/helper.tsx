@@ -32,17 +32,13 @@ export const Helper: React.FC = () => {
         const fetchData = async () => {
             const storedData = localStorage.getItem("allissues");
             if (storedData) {
-                console.log("Data found in localStorage, loading from localStorage...");
-                console.log(JSON.parse(storedData))
                 setHelperItems(JSON.parse(storedData));
             } else {
-                console.log("No data in localStorage, fetching from API...");
                 try {
                     const response = await fetch(`${path}issue/all`);
                     if (response.ok) {
                         const { data } = await response.json();
                         const first40Items = data.slice(0, 40);
-                        console.log("Data fetched from API:", first40Items);
                         setHelperItems(first40Items);
                         localStorage.setItem("allissues", JSON.stringify(first40Items));
                     } else {
@@ -107,7 +103,7 @@ export const Helper: React.FC = () => {
                     <NavLink to={`/help/${item.id}`} key={item.id} className="helper__list__item">
                         <div className="helper__list__item__userpic">
                             <div>
-                                <img src={imgPath} alt="user profile pic" />
+                                <img src={item.author.profile_picture || imgPath} alt="user profile pic" />
                             </div>
                         </div>
                         <div className="helper__list__item__userinfo">

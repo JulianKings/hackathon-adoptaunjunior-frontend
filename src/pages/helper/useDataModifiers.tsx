@@ -11,7 +11,6 @@ export const useDataModifiers = <T,>(
   searchConfig?: SearchConfig,
 ): UseDataModifiersReturn<T> => {
   const [page, setPage] = useState<number>(1);
-  console.log(`items: ${items}`);
   const { dataCurrentPage, totalPages, dataLength } = useMemo(() => {
     if (!items) return { dataCurrentPage: [], totalPages: 0, dataLength: 0 };
 

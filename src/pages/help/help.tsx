@@ -10,18 +10,15 @@ export const Help: React.FC = () => {
     useEffect(() => {
         const storedData = localStorage.getItem("allissues");
         if (storedData) {
-            console.log("Loaded data from localStorage");
             const allIssues: HelperItemInterface[] = JSON.parse(storedData);
 
             const foundItem = allIssues.find(issue => issue.id === parseInt(id || "", 10));
             if (foundItem) {
                 setItem(foundItem);
             } else {
-                console.log("Item not found in localStorage");
                 setItem(null);
             }
         } else {
-            console.log("No data found in localStorage");
             setItem(null);
         }
     }, [id]);
@@ -51,7 +48,7 @@ export const Help: React.FC = () => {
                     <div className="help__content__info">
                         <div className="help__content__info__user">
                             <div className="help__content__info__user__pic">
-                                <img src={imgPath} alt="user profile pic help" />
+                                <img src={item.author.profile_picture || imgPath} alt="user profile pic help" />
                             </div>
                             <div className="help__content__info__user__name">
                                 {item.author.name}
