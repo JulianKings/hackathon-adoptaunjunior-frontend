@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; 
 import "./login.scss";
 import { attemptLogin } from "../../session/sessionManager";
 import { LoginAttempt } from "../../interfaces/session";
+import { useApiSelector } from "../../redux/store";
+import { selectSession } from "../../redux/slices/session";
 
 export const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [errors, setErrors] = useState({ email: "", password: "" });
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
+    const session = useApiSelector(selectSession);
+
+    useEffect(() => {
+        if(session)
+        {
+            navigate('/');
+        }
+    }, [session])
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -43,7 +53,7 @@ export const Login = () => {
             if(result && result.status === 'valid')
             {
                 // logged in succesfully
-                navigate("/");
+                navigate(0);
             } else if(result) {
                 // an error happened
                 if(result.errors)
