@@ -6,6 +6,8 @@
     text-align: center;
     background-color: #FF981B;
     min-height: 100vh;
+    padding: 4rem;
+
 
     &__title {
         font-size: 3rem;
@@ -33,10 +35,12 @@
     }
 
     &__img{
-        width: 20%;
-        transform: translate(226px, 119px);
+        width: 13%;
+        transform: translate(462px, 119px);
+        position: absolute;
     }
 }
+
 
 @keyframes bounce {
     0%, 100% {
