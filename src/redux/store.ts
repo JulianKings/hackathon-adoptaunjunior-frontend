@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit"
 import { useDispatch, useSelector } from "react-redux";
 import sessionReducer from "./slices/session";
+import resourcesReducer from "./slices/resources";
 
 const store = configureStore({
     reducer: {
-       session: sessionReducer
+       session: sessionReducer,
+       resources: resourcesReducer
     }
 })
 
