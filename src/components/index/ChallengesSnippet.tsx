@@ -11,7 +11,7 @@ const challenges: ApiChallengeInterface[] = [
         content: "Tu tarea es implementar una función que tome una cadena como entrada y devuelva verdadero si es un palíndromo y falso de lo contrario. Recuerda ignorar espacios y puntuación.",
         published: true,
         difficulty: 'easy',
-        picture: "public/assets/challenge1.png"
+        picture: "/assets/challenge1.png"
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const challenges: ApiChallengeInterface[] = [
         content: "Implementa una función que devuelva un array que contenga la secuencia de Fibonacci hasta n. La secuencia de Fibonacci comienza con 0 y 1, donde cada número subsecuente es la suma de los dos anteriores.",
         published: true,
         difficulty: 'medium',
-        picture: "public/assets/challenge2.png"
+        picture: "/assets/challenge2.png"
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const challenges: ApiChallengeInterface[] = [
         content: "Crea funciones para al menos tres algoritmos de ordenamiento diferentes (por ejemplo, ordenamiento burbuja, ordenamiento rápido, ordenamiento por mezcla) y compara su rendimiento en arrays de números aleatorios.",
         published: false,
         difficulty: 'hard',
-        picture: "public/assets/challenge3.png"
+        picture: "/assets/challenge3.png"
     },
     {
         id: 4,
@@ -44,7 +44,7 @@ const challenges: ApiChallengeInterface[] = [
         content: "Dada una array ordenada y un valor objetivo, escribe una función para determinar si el objetivo existe en la array utilizando búsqueda binaria. Devuelve el índice si se encuentra, de lo contrario, devuelve -1.",
         published: true,
         difficulty: 'medium',
-        picture: "public/assets/challenge4.png"
+        picture: "/assets/challenge4.png"
     },
     {
         id: 5,
@@ -55,7 +55,7 @@ const challenges: ApiChallengeInterface[] = [
         content: "Escribe una función que tome dos cadenas como entrada y determine si son anagramas entre sí. Ignora espacios y distinciones entre mayúsculas y minúsculas.",
         published: true,
         difficulty: 'easy',
-        picture: "public/assets/challenge5.png"
+        picture: "/assets/challenge5.png"
     },
     {
         id: 6,
@@ -66,7 +66,7 @@ const challenges: ApiChallengeInterface[] = [
         content: "Implementa una función que tome una cadena y devuelva un objeto con los conteos de vocales y consonantes. Asegúrate de que maneje tanto letras mayúsculas como minúsculas.",
         published: false,
         difficulty: 'basic',
-        picture: "public/assets/challenge6.png"
+        picture: "/assets/challenge6.png"
     }
 ];
 

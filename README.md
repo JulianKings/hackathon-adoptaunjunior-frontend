@@ -4,9 +4,9 @@ Desarrollo de una app simple de retos de desarrollo con un sistema de "trucos" (
 
 Debe contar con:
 - **Un registro simple**
- - Email y contraseña
- - Selección de nivel de experiencia
- - Areas de interés
+	- Email y contraseña
+	- Selección de nivel de experiencia
+	- Areas de interés
 - **Una página principal**
 	- Retos disponibles
 	- Recursos compartidos recientemente
@@ -17,5 +17,9 @@ Debe contar con:
 	- Compartir soluciones
 	- Subir capturas de código
 	- Dar y recibir feedback
+
+### Setup
+El proyecto necesita usar variables de entorno para establecer la ruta a la API:
+- En nuestras variables de entorno estableceremos la variable "REACT_APP_API_LOCATION" y la ruta de nuestra api
 
 Más información [aquí](https://www.linkedin.com/posts/adoptaunjunior_hackathon-adoptaunjunior-ugcPost-7254414851756728321-XWzZ/?utm_source=share&utm_medium=member_desktop "aquí").
