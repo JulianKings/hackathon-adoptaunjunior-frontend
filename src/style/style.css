@@ -3,225 +3,6 @@
   color: #2B2B2B;
   padding: 1em;
 }
-.helper__modifiers {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1em;
-}
-.helper__modifiers div {
-  display: flex;
-  align-items: center;
-}
-.helper__modifiers div button {
-  background-color: #FFFBE8;
-  color: #2B2B2B;
-  border: 1px solid #ffc681;
-  border-radius: 0.25em;
-  padding: 0.5em 1em;
-  margin: 0.5em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.helper__modifiers div button.active {
-  background-color: white;
-  color: #FF981B;
-}
-.helper__modifiers div button:hover {
-  background-color: white;
-}
-.helper__list {
-  display: flex;
-  flex-direction: column;
-  margin: 1em 0;
-  border-radius: 0.5em;
-  overflow: hidden;
-}
-.helper__list__item {
-  display: flex;
-  align-items: center;
-  background-color: #FFFBE8;
-  border: 1px solid #ffc681;
-  padding: 0.5em;
-  width: 100%;
-  transition: background-color 0.3s;
-  text-decoration: none;
-  color: #2B2B2B;
-}
-.helper__list__item:hover {
-  background-color: white;
-}
-.helper__list__item__userpic {
-  margin-right: 0.5em;
-}
-.helper__list__item__userpic img {
-  border-radius: 50%;
-  width: 2em;
-  height: 2em;
-}
-.helper__list__item__userinfo {
-  flex-grow: 1;
-}
-.helper__list__item__userinfo strong {
-  font-size: 1rem;
-  color: #FF981B;
-}
-.helper__list__item__userinfo span,
-.helper__list__item__userinfo em {
-  font-size: 0.85rem;
-  color: #454545;
-}
-.helper__list__item__userstats {
-  text-align: right;
-  font-size: 0.85rem;
-  color: #454545;
-}
-
-.tag {
-  display: inline-block;
-  background-color: #FF981B;
-  border-radius: 0.25em;
-  color: #2B2B2B;
-  padding: 0.25em 0.5em;
-  margin: 0.25em;
-  font-size: 0.75rem;
-}
-
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1em;
-  gap: 0.5em;
-}
-.pagination button {
-  background-color: #FFFBE8;
-  color: #2B2B2B;
-  border: 1px solid #ffc681;
-  border-radius: 0.25em;
-  padding: 0.5em 1em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.pagination button:disabled {
-  background-color: #fff2b5;
-  cursor: not-allowed;
-}
-.pagination button:hover:not(:disabled) {
-  background-color: white;
-}
-.pagination span {
-  font-size: 1rem;
-  color: #2B2B2B;
-}
-
-.help {
-  background-color: #FF981B;
-  color: #2B2B2B;
-  padding: 1em;
-}
-.help > div {
-  border-radius: 0.5em;
-  overflow: hidden;
-}
-.help button {
-  background-color: #FFFBE8;
-  color: #2B2B2B;
-  border: 1px solid #ffc681;
-  border-radius: 0.25em;
-  padding: 0.5em 1em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.help button:hover {
-  background-color: white;
-}
-.help__header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5em;
-  background-color: #FFFBE8;
-  color: #2B2B2B;
-  border-bottom: 1px solid #ffc681;
-}
-.help__header > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5em;
-}
-.help__header__title {
-  font-size: 1.5rem;
-  color: #2B2B2B;
-  margin: 0;
-}
-.help__content {
-  display: flex;
-  padding-top: 1em;
-  background-color: #FFFBE8;
-}
-.help__content__sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #FFFBE8;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  width: 3em;
-  gap: 0.5em;
-}
-.help__content__sidebar span {
-  color: #2B2B2B;
-  font-size: 1.1rem;
-  text-align: center;
-}
-.help__content__info {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  padding-left: 1em;
-}
-.help__content__info__user {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  padding-bottom: 0.5em;
-  margin-bottom: 0.5em;
-}
-.help__content__info__user__pic > img {
-  border-radius: 50%;
-  width: 2em;
-  height: 2em;
-}
-.help__content__info__user__name {
-  font-size: 1rem;
-  color: #2B2B2B;
-}
-.help__content__info__user__createdat, .help__content__info__user__views {
-  font-size: 0.9rem;
-  color: #454545;
-}
-.help__content__info__message {
-  font-size: 1rem;
-  color: #2B2B2B;
-  padding-top: 0.5em;
-}
-
-@font-face {
-  font-family: "creepster";
-  src: url("../assets/font/Creepster/Creepster-Regular.ttf");
-}
-@font-face {
-  font-family: "raleway";
-  src: url("../../assets/font/Raleway/static/Raleway-Regular.ttf");
-}
-.helper {
-  background-color: #FF981B;
-  color: #2B2B2B;
-  padding: 1em;
-}
 
 .helper__modifiers {
   display: flex;
@@ -238,7 +19,7 @@
 .helper__modifiers div button {
   background-color: #FFFBE8;
   color: #2B2B2B;
-  border: 1px solid #ffc681;
+  border: 1px solid rgb(255, 198.0789473684, 129);
   border-radius: 0.25em;
   padding: 0.5em 1em;
   margin: 0.5em;
@@ -267,7 +48,7 @@
   display: flex;
   align-items: center;
   background-color: #FFFBE8;
-  border: 1px solid #ffc681;
+  border: 1px solid rgb(255, 198.0789473684, 129);
   padding: 0.5em;
   width: 100%;
   transition: background-color 0.3s;
@@ -301,13 +82,13 @@
 .helper__list__item__userinfo span,
 .helper__list__item__userinfo em {
   font-size: 0.85rem;
-  color: #454545;
+  color: rgb(68.5, 68.5, 68.5);
 }
 
 .helper__list__item__userstats {
   text-align: right;
   font-size: 0.85rem;
-  color: #454545;
+  color: rgb(68.5, 68.5, 68.5);
 }
 
 .tag {
@@ -331,7 +112,7 @@
 .pagination button {
   background-color: #FFFBE8;
   color: #2B2B2B;
-  border: 1px solid #ffc681;
+  border: 1px solid rgb(255, 198.0789473684, 129);
   border-radius: 0.25em;
   padding: 0.5em 1em;
   cursor: pointer;
@@ -339,7 +120,7 @@
 }
 
 .pagination button:disabled {
-  background-color: #fff2b5;
+  background-color: rgb(255, 242.1304347826, 181);
   cursor: not-allowed;
 }
 
@@ -366,7 +147,7 @@
 .help button {
   background-color: #FFFBE8;
   color: #2B2B2B;
-  border: 1px solid #ffc681;
+  border: 1px solid rgb(255, 198.0789473684, 129);
   border-radius: 0.25em;
   padding: 0.5em 1em;
   cursor: pointer;
@@ -385,7 +166,7 @@
   padding: 0.5em;
   background-color: #FFFBE8;
   color: #2B2B2B;
-  border-bottom: 1px solid #ffc681;
+  border-bottom: 1px solid rgb(255, 198.0789473684, 129);
 }
 
 .help__header > div {
@@ -452,7 +233,7 @@
 
 .help__content__info__user__createdat, .help__content__info__user__views {
   font-size: 0.9rem;
-  color: #454545;
+  color: rgb(68.5, 68.5, 68.5);
 }
 
 .help__content__info__message {
@@ -496,7 +277,6 @@
 }
 .challenges__grid__card__top {
   width: 100%;
-  height: -moz-max-content;
   height: max-content;
   display: flex;
   justify-content: space-between;
@@ -553,14 +333,11 @@
   font-weight: 100;
 }
 .challenges__grid__card__middle__tags {
-  width: -moz-max-content;
   width: max-content;
-  height: -moz-max-content;
   height: max-content;
   margin-top: 0.5em;
 }
 .challenges__grid__card__middle__tags div {
-  width: -moz-max-content;
   width: max-content;
   height: 1.5em;
   padding: 0 1em;
@@ -632,7 +409,6 @@
 @media only screen and (min-width: 1024px) {
   .challenges__grid {
     margin: 0 auto;
-    width: -moz-max-content;
     width: max-content;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -641,13 +417,378 @@
 @media only screen and (min-width: 1440px) {
   .challenges__grid {
     margin: 0 auto;
-    width: -moz-max-content;
     width: max-content;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
 }
+.challenge {
+  width: 100%;
+  height: max-content;
+  background-color: #2B2B2B;
+  padding: 1em;
+}
+.challenge h1 {
+  font-family: "creepster";
+  font-size: 3rem;
+  color: #FF981B;
+  text-shadow: 9px 9px 8px black;
+  text-align: center;
+}
+.challenge__description {
+  margin-top: 1em;
+  padding: 0 1rem;
+}
+.challenge__description__txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.challenge__description__txt p {
+  width: 50%;
+  font-family: "raleway";
+  font-size: 1.3rem;
+  color: #FFFFFF;
+}
+.challenge__description__txt img {
+  width: 177.18px;
+  height: 191px;
+}
+.challenge__description__tags {
+  width: max-content;
+  height: max-content;
+  margin-top: 1em;
+}
+.challenge__description__tags div {
+  width: max-content;
+  height: 1.5em;
+  padding: 0 1em;
+  font-family: "creepster";
+  font-size: 1rem;
+  display: inline-block;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 9999px;
+  margin-right: 0.5em;
+  background-color: #FF981B;
+  color: #fff;
+}
+.challenge__description__tags div span {
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
+  line-height: 1.5em;
+}
+.challenge__description__info {
+  margin-top: 1em;
+}
+.challenge__description__info__bloq {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.3em;
+}
+.challenge__description__info__bloq div {
+  font-family: "creepster";
+  font-size: 1.25rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.challenge__description__box {
+  display: none;
+}
+.challenge__diff {
+  height: 15.156em;
+  box-shadow: 8px 3px 33.3px 44px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to bottom, #2b2b2b 95%, rgba(0, 0, 0, 0.81) 100%);
+  margin: 3rem 0;
+  margin-top: 4rem;
+  position: relative;
+  border-radius: 2.063em;
+  padding: 1em;
+  align-content: center;
+}
+.challenge__diff__points {
+  position: absolute;
+  top: -12%;
+  left: 10%;
+}
+.challenge__diff__points img {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.3em;
+}
+.challenge__diff__moon {
+  width: 117px;
+  height: 121px;
+  border-radius: 50%;
+  background: linear-gradient(to top, #ffffff 0%, #2b2b2b 100%);
+  box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.3);
+  filter: blur(0.5px);
+  position: absolute;
+  right: -2%;
+  top: -25%;
+}
+.challenge__diff__moon div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.challenge__diff__moon div img {
+  position: absolute;
+  right: 0;
+  top: -30%;
+}
+.challenge__diff h2 {
+  width: 5.563em;
+  font-size: 3em;
+  font-family: "creepster";
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
+  color: #FF981B;
+}
+.challenge__diff__btns {
+  display: flex;
+  position: absolute;
+  gap: 0.5rem;
+  bottom: -5%;
+}
+.challenge__diff__btns div {
+  font-family: "creepster";
+  font-size: 1.25rem;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), 0px 1px 2px rgba(0, 0, 0, 0.6);
+  border-radius: 5em;
+  width: 9em;
+  height: 2.375em;
+  align-content: center;
+}
+.challenge__diff__btns div:nth-child(1) {
+  background: linear-gradient(to bottom, #875BF7 15%, #4F3591 91%);
+}
+.challenge__diff__btns div:nth-child(2) {
+  background: #FF981B;
+}
 
+.helper {
+  background-color: #FF981B;
+  color: #2B2B2B;
+  padding: 1em;
+}
+.helper__modifiers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.helper__modifiers div {
+  display: flex;
+  align-items: center;
+}
+.helper__modifiers div button {
+  background-color: #FFFBE8;
+  color: #2B2B2B;
+  border: 1px solid rgb(255, 198.0789473684, 129);
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.helper__modifiers div button.active {
+  background-color: white;
+  color: #FF981B;
+}
+.helper__modifiers div button:hover {
+  background-color: white;
+}
+.helper__list {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.helper__list__item {
+  display: flex;
+  align-items: center;
+  background-color: #FFFBE8;
+  border: 1px solid rgb(255, 198.0789473684, 129);
+  padding: 0.5em;
+  width: 100%;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  color: #2B2B2B;
+}
+.helper__list__item:hover {
+  background-color: white;
+}
+.helper__list__item__userpic {
+  margin-right: 0.5em;
+}
+.helper__list__item__userpic img {
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+}
+.helper__list__item__userinfo {
+  flex-grow: 1;
+}
+.helper__list__item__userinfo strong {
+  font-size: 1rem;
+  color: #FF981B;
+}
+.helper__list__item__userinfo span,
+.helper__list__item__userinfo em {
+  font-size: 0.85rem;
+  color: rgb(68.5, 68.5, 68.5);
+}
+.helper__list__item__userstats {
+  text-align: right;
+  font-size: 0.85rem;
+  color: rgb(68.5, 68.5, 68.5);
+}
+
+.tag {
+  display: inline-block;
+  background-color: #FF981B;
+  border-radius: 0.25em;
+  color: #2B2B2B;
+  padding: 0.25em 0.5em;
+  margin: 0.25em;
+  font-size: 0.75rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  gap: 0.5em;
+}
+.pagination button {
+  background-color: #FFFBE8;
+  color: #2B2B2B;
+  border: 1px solid rgb(255, 198.0789473684, 129);
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.pagination button:disabled {
+  background-color: rgb(255, 242.1304347826, 181);
+  cursor: not-allowed;
+}
+.pagination button:hover:not(:disabled) {
+  background-color: white;
+}
+.pagination span {
+  font-size: 1rem;
+  color: #2B2B2B;
+}
+
+.help {
+  background-color: #FF981B;
+  color: #2B2B2B;
+  padding: 1em;
+}
+.help > div {
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.help button {
+  background-color: #FFFBE8;
+  color: #2B2B2B;
+  border: 1px solid rgb(255, 198.0789473684, 129);
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.help button:hover {
+  background-color: white;
+}
+.help__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  background-color: #FFFBE8;
+  color: #2B2B2B;
+  border-bottom: 1px solid rgb(255, 198.0789473684, 129);
+}
+.help__header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+.help__header__title {
+  font-size: 1.5rem;
+  color: #2B2B2B;
+  margin: 0;
+}
+.help__content {
+  display: flex;
+  padding-top: 1em;
+  background-color: #FFFBE8;
+}
+.help__content__sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFBE8;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  width: 3em;
+  gap: 0.5em;
+}
+.help__content__sidebar span {
+  color: #2B2B2B;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.help__content__info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 1em;
+}
+.help__content__info__user {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+.help__content__info__user__pic > img {
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+}
+.help__content__info__user__name {
+  font-size: 1rem;
+  color: #2B2B2B;
+}
+.help__content__info__user__createdat, .help__content__info__user__views {
+  font-size: 0.9rem;
+  color: rgb(68.5, 68.5, 68.5);
+}
+.help__content__info__message {
+  font-size: 1rem;
+  color: #2B2B2B;
+  padding-top: 0.5em;
+}
+
+@font-face {
+  font-family: "creepster";
+  src: url("../assets/font/Creepster/Creepster-Regular.ttf");
+}
+@font-face {
+  font-family: "raleway";
+  src: url("../../assets/font/Raleway/static/Raleway-Regular.ttf");
+}
 .index-page {
   position: relative;
   overflow: hidden;
