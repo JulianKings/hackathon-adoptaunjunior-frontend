@@ -1,8 +1,7 @@
 import { LocalStorageLoginInformation, LoginAttempt } from "../interfaces/session";
 import { ApiUserInterface } from "../interfaces/user";
 
-const path = (process.env.NODE_ENV !== 'production') ? import.meta.env.VITE_API_LOCATION : process.env.REACT_APP_API_LOCATION;
-const vite = import.meta.env.VITE_API_LOCATION;
+const path = import.meta.env.VITE_API_LOCATION;
 
 export async function getSession(ssoToken?: LocalStorageLoginInformation): Promise<ApiUserInterface | null> {
     if(ssoToken && ssoToken.jwt_token)  {
@@ -43,9 +42,6 @@ export async function getSession(ssoToken?: LocalStorageLoginInformation): Promi
 }
 
 export async function attemptLogin(email: string, password: string): Promise<LoginAttempt | null> {
-    console.error(process.env.NODE_ENV);
-    console.error(vite);
-    
     return fetch(path + "login", { 
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
@@ -60,7 +56,6 @@ export async function attemptLogin(email: string, password: string): Promise<Log
         return response.json();
     })
     .then((response) => {
-        console.log(response);
         if(response.responseStatus)
         {
             if(response.responseStatus === 'validLogin')
