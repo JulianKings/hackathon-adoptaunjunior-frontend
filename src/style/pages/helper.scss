@@ -260,7 +260,7 @@ $margin-medium: 1em;
             &__message {
                 font-size: 1rem;
                 color: $text-color;
-                padding-top: $padding-small;
+                padding: $padding-medium;
             }
         }
     }

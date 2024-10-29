@@ -206,7 +206,7 @@
 .help__content__info__message {
   font-size: 1rem;
   color: #2B2B2B;
-  padding-top: 0.5em;
+  padding: 1em;
 }
 
 @font-face {
