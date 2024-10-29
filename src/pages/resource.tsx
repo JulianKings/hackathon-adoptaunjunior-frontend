@@ -22,12 +22,15 @@ export function Resource() {
 
     return (
         <div className="resource">
+            <img className="resource__img" src="./../assets/pumpkin.webp" alt="" />
             <h1 className="resource__title">{resource.title}</h1>
             <img
                 src={resource.image}
                 alt={resource.title}
                 className="resource__image"
             />
+
+            
             <p className="resource__text">{resource.description}</p>
         </div>
     );

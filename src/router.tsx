@@ -27,7 +27,7 @@ export const Router = () => {
                 { path: '/challenges', element: <Challenges /> },
                 { path: '/challenge/:id', element: <Challenge /> },
                 { path: '/resources', element: <Resources /> },
-                { path: '/resource/:id', element: <Resource /> },
+                { path: '/resources/:id', element: <Resource /> },
                 { path: '/help', element: <Helper /> },
                 { path: '/help/:id', element: <Help /> },
             ]
