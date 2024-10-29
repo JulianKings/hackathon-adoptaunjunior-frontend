@@ -13,7 +13,7 @@ const resources: ApiResourceInterface[] = [
         published: true,
         type: 'course',
         url: "https://www.linkedin.com/posts/braismoure_el-curso-de-fundamentos-de-javascript-desde-activity-7232378595594153984-saKp/?originalSubdomain=es",
-        image: "/public/assets/fundamentos_javascript.jpeg"
+        image: "/assets/fundamentos_javascript.jpeg"
     },
     {
         id: 2,
@@ -25,7 +25,7 @@ const resources: ApiResourceInterface[] = [
         published: false,
         type: 'video',
         url: "https://www.linkedin.com/pulse/5-consejos-b%C3%A1sicos-sobre-dise%C3%B1o-responsive-juan-alonso/",
-        image: "public/assets/consejos_responsivo.jpeg"
+        image: "/assets/consejos_responsivo.jpeg"
     },
     {
         id: 3,
@@ -37,7 +37,7 @@ const resources: ApiResourceInterface[] = [
         published: true,
         type: 'course',
         url: "https://www.linkedin.com/pulse/css-grid-b%C3%A1sico-todo-lo-que-necesitas-saber-para-empezar-campos/",
-        image: "public/assets/css_grid.png"
+        image: "/assets/css_grid.png"
     },
     {
         id: 4,
@@ -49,7 +49,7 @@ const resources: ApiResourceInterface[] = [
         published: true,
         type: 'video',
         url: "https://developero.io/blog/react-js-design-patterns",
-        image: "public/assets/patrones_react.jpeg"
+        image: "/assets/patrones_react.jpeg"
     },
     {
         id: 5,
@@ -61,7 +61,7 @@ const resources: ApiResourceInterface[] = [
         published: false,
         type: 'course',
         url: "https://johnserrano.co/blog/typescript-desde-cero-descubriendo-sus-ventajas-y-fundamentos-basicos",
-        image: "public/assets/fundamentos_typescript.webp"
+        image: "/assets/fundamentos_typescript.webp"
     },
     {
         id: 6,
@@ -73,7 +73,7 @@ const resources: ApiResourceInterface[] = [
         published: true,
         type: 'video',
         url: "https://www.youtube.com/watch?app=desktop&v=EwAWX91Bk3E",
-        image: "public/assets/intro_webpack.jpg"
+        image: "/assets/intro_webpack.jpg"
     }
 ];
 

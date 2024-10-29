@@ -1,10 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { useApiSelector } from "../../redux/store";
+import { selectSession } from "../../redux/slices/session";
 
 export function Header() {
 
     const location = useLocation();
     const headerClass = location.pathname === '/' ? 'header--home' : 'header--default';
+    const session = useApiSelector(selectSession);
 
     return (
         <header className={`header ${headerClass}`}>
@@ -25,14 +28,24 @@ export function Header() {
                     <NavLink to="/help"><img className="header__icon" src="/src/assets/help.png" /></NavLink>
                     <NavLink className="header__page-link" to='/help'>Ayuda</NavLink>
                 </div>
-                <div className="header__link-container">
-                    <NavLink to="/signup"><img className="header__icon" src="/src/assets/account.png" /></NavLink>
-                    <NavLink className="header__page-link" to='/signup'>Registro</NavLink>
-                </div>
-                <div className="header__link-container">
-                    <NavLink to="/login"><img className="header__icon" src="/src/assets/login.png" /></NavLink>
-                    <NavLink className="header__page-link" to='/login'>Login</NavLink>
-                </div>
+                {(session) ?
+                    <Fragment>                        
+                        <div className="header__link-container">
+                            <NavLink to="/logout"><img className="header__icon" src="/src/assets/login.png" /></NavLink>
+                            <NavLink className="header__page-link" to='/login'>Logout</NavLink>
+                        </div>
+                    </Fragment> :
+                    <Fragment>
+                        <div className="header__link-container">
+                            <NavLink to="/signup"><img className="header__icon" src="/src/assets/account.png" /></NavLink>
+                            <NavLink className="header__page-link" to='/signup'>Registro</NavLink>
+                        </div>
+                        <div className="header__link-container">
+                            <NavLink to="/login"><img className="header__icon" src="/src/assets/login.png" /></NavLink>
+                            <NavLink className="header__page-link" to='/login'>Login</NavLink>
+                        </div>
+                    </Fragment>}
+                
             </div>
         </header>
     );
