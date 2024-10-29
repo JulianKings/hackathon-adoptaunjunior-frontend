@@ -12,6 +12,7 @@ import { Solution } from "./pages/solution";
 import { Challenge } from "./pages/challenge";
 import { Resource } from "./pages/resource";
 import { Help } from "./pages/help/help.tsx";
+import { Logout } from "./pages/logout.tsx";
 
 export const Router = () => {
     const router = createBrowserRouter ([
@@ -30,6 +31,7 @@ export const Router = () => {
                 { path: '/resource/:id', element: <Resource /> },
                 { path: '/help', element: <Helper /> },
                 { path: '/help/:id', element: <Help /> },
+                { path: '/logout', element: <Logout /> },
             ]
         }
     ]);
