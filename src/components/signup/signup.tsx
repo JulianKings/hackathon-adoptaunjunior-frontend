@@ -1,5 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./signup.scss";
+import { useNavigate } from "react-router-dom";
+import { LoginAttempt, RegisterAttempt } from "../../interfaces/session";
+import { attemptLogin, attemptRegister } from "../../session/sessionManager";
+import { hash } from "bcrypt-ts";
+import { useApiSelector } from "../../redux/store";
+import { selectSession } from "../../redux/slices/session";
 
 export const Signup = () => {
     const [name, setName] = useState("");
@@ -7,6 +13,15 @@ export const Signup = () => {
     const [password, setPassword] = useState("");
     const [experience, setExperience] = useState("");
     const [errors, setErrors] = useState({ name: "", email: "", password: "", experience: "" });
+    const navigate = useNavigate();
+    const session = useApiSelector(selectSession);
+
+    useEffect(() => {
+        if(session)
+        {
+            navigate('/');
+        }
+    }, [session])
 
     const handleNameChange = (e) => {
         setName(e.target.value);
@@ -25,7 +40,7 @@ export const Signup = () => {
         setPassword(e.target.value);
         setErrors((prevErrors) => ({
             ...prevErrors,
-            password: e.target.value.length >= 6 ? "" : "Password must be at least 6 characters",
+            password: e.target.value.length >= 4 ? "" : "Password must be at least 4 characters",
         }));
     };
 
@@ -34,7 +49,7 @@ export const Signup = () => {
         setErrors((prevErrors) => ({ ...prevErrors, experience: e.target.value ? "" : "Experience is required" }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (!name || !email || !password || !experience) {
             setErrors({
@@ -47,7 +62,42 @@ export const Signup = () => {
         }
 
         if (!errors.name && !errors.email && !errors.password && !errors.experience) {
-            alert("Registration successful!");
+            const result: RegisterAttempt | null = await attemptRegister(email, password, name, experience);
+            if(result && result.status === 'valid')
+            {
+                // registered successfully
+                const loginResult: LoginAttempt | null = await attemptLogin(email, password);
+                if(loginResult && loginResult.status === 'valid')
+                {
+                    // logged in successfully
+                    navigate(0);
+                } else {
+                    // how?
+                    navigate("/login");
+                }
+            } else if(result) {
+                // an error happened
+                if(result.errors)
+                {
+                    result.errors.forEach(error => {
+                        if(error.path === 'email')
+                        {
+                            setErrors((prevErrors) => ({ ...prevErrors, email: error.msg }));
+                        } else if(error.path === 'password')
+                        {
+                            setErrors((prevErrors) => ({ ...prevErrors, password: error.msg }));
+                        } else if(error.path === 'name')
+                        {
+                            setErrors((prevErrors) => ({ ...prevErrors, name: error.msg }));
+                        } else if(error.path === 'experience')
+                        {
+                            setErrors((prevErrors) => ({ ...prevErrors, experience: error.msg }));
+                        }
+                    });
+                }
+            } else {
+                // no internet connection?
+            }
         }
     };
 

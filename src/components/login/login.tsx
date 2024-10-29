@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; 
 import "./login.scss";
+import { attemptLogin } from "../../session/sessionManager";
+import { LoginAttempt } from "../../interfaces/session";
 
 export const Login = () => {
     const [email, setEmail] = useState("");
@@ -19,14 +21,14 @@ export const Login = () => {
 
     const handlePasswordChange = (e) => {
         setPassword(e.target.value);
-        if (e.target.value.length < 6) {
-            setErrors((prevErrors) => ({ ...prevErrors, password: "Password must be at least 6 characters" }));
+        if (e.target.value.length < 4) {
+            setErrors((prevErrors) => ({ ...prevErrors, password: "Password must be at least 4 characters" }));
         } else {
             setErrors((prevErrors) => ({ ...prevErrors, password: "" }));
         }
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (!email || !password) {
             setErrors({
@@ -37,7 +39,28 @@ export const Login = () => {
         }
 
         if (!errors.email && !errors.password) {
-            alert("Login successful!");
+            const result: LoginAttempt | null = await attemptLogin(email, password);
+            if(result && result.status === 'valid')
+            {
+                // logged in succesfully
+                navigate("/");
+            } else if(result) {
+                // an error happened
+                if(result.errors)
+                {
+                    result.errors.forEach(error => {
+                        if(error.path === 'email')
+                        {
+                            setErrors((prevErrors) => ({ ...prevErrors, email: error.msg }));
+                        } else if(error.path === 'password')
+                        {
+                            setErrors((prevErrors) => ({ ...prevErrors, password: error.msg }));
+                        }
+                    });
+                }
+            } else {
+                // no internet connection?
+            }
         }
     };
 
