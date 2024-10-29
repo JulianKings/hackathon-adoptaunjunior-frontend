@@ -20,6 +20,14 @@
         padding: 0 15%;
         text-align: center;
         cursor: pointer;
+        transition: transform 0.7s ease;
+        &:hover {
+            transform: scale(1.15);
+        }
+        &:hover &__text-container {
+            background: linear-gradient(to bottom, #2B2B2B 0%, #4F3591 100%);
+            color: #FF981B;
+        }
         &__text-container {
             height: 265px;
             transform: translate(0, -5px); // Cubre un espacio entre imagen y div que no sé de donde viene -AA.
@@ -28,6 +36,7 @@
             border-bottom-right-radius: 46px;
             background-color: var(--theme-black);
             color: var(--theme-white);
+            transition: color 1s ease;
         }
     }
     img {
