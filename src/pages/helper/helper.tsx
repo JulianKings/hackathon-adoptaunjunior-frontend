@@ -38,7 +38,7 @@ export const Helper: React.FC = () => {
             } else {
                 console.log("No data in localStorage, fetching from API...");
                 try {
-                    const response = await fetch(`${path}/issue/all`);
+                    const response = await fetch(`${path}issue/all`);
                     if (response.ok) {
                         const { data } = await response.json();
                         const first40Items = data.slice(0, 40);
