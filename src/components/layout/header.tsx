@@ -31,13 +31,13 @@ export function Header() {
                 {(session) ?
                     <Fragment>                        
                         <div className="header__link-container">
-                            <NavLink to="/logout"><img className="header__icon" src="/src/assets/login.png" /></NavLink>
+                            <NavLink to="/logout"><img className="header__icon" src="/public/assets/login.svg" /></NavLink>
                             <NavLink className="header__page-link" to='/login'>Logout</NavLink>
                         </div>
                     </Fragment> :
                     <Fragment>
                         <div className="header__link-container">
-                            <NavLink to="/login"><img className="header__icon" src="/src/assets/login.png" /></NavLink>
+                            <NavLink to="/login"><img className="header__icon" src="/public/assets/login.svg" /></NavLink>
                             <NavLink className="header__page-link" to='/login'>Login</NavLink>
                         </div>
                     </Fragment>}
