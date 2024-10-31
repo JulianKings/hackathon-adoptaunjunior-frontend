@@ -17,11 +17,11 @@ export function Header() {
                     <NavLink className="header__page-link" to='/'>Inicio</NavLink>
                 </div>
                 <div className="header__link-container">
-                    <NavLink to="/challenges"><img className="header__icon" src="/src/assets/magic-wand.png" /></NavLink>
+                    <NavLink to="/challenges"><img className="header__icon" src="/public/assets/magic.svg" /></NavLink>
                     <NavLink className="header__page-link" to='/challenges'>Trucos</NavLink>
                 </div>
                 <div className="header__link-container">
-                    <NavLink to="/resources"><img className="header__icon" src="/src/assets/lollipop.png" /></NavLink>
+                    <NavLink to="/resources"><img className="header__icon" src="/public/assets/lollipop.svg" /></NavLink>
                     <NavLink className="header__page-link" to='/resources'>Tratos</NavLink>
                 </div>
                 <div className="header__link-container">
