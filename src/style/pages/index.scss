@@ -133,7 +133,9 @@
     transition: transform 0.9s ease, background-color 0.9s ease, color 0.9s ease;
     &:hover {
         transform: scale(1.15);
-        
+        background: none;
+        background-color: var(--theme-black);
+        color: var(--theme-white);
     }
     &__title {
         margin-bottom: 45px;
