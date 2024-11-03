@@ -18,7 +18,7 @@ export function Index() {
         window.scrollTo(0, 0);
     };
 
-    const handleHomeLinkHover = () => {
+    const handleHomeLinkMouseEnter = () => {
         setHomeLinkIconOnHover('/public/assets/vampire-icon.webp');
     }
 
@@ -33,7 +33,7 @@ export function Index() {
             <ResourcesSnippet />
             <button className="index-page__button index-page__button--resources" onClick={handleNavigation}>VER TODOS</button>
             <div className="home-link-container">
-                <HomeLink name="Preguntas" icon={homeLinkIconOnHover || 'src/assets/question-mark-icon.png'} id='preguntas' onMouseEnter={handleHomeLinkHover}/>
+                <HomeLink name="Preguntas" icon={homeLinkIconOnHover || 'src/assets/question-mark-icon.png'} id='preguntas' onMouseEnter={handleHomeLinkMouseEnter}/>
                 {/* <HomeLink name="Logros" icon="src/assets/cup-icon.png" id='logros'/> */}
             </div>
             <img className="index-page__image index-page__image--ghost" src="src/assets/ghost.webp" />
