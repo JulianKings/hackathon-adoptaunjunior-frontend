@@ -22,6 +22,10 @@ export function Index() {
         setHomeLinkIconOnHover('/public/assets/vampire-icon.webp');
     }
 
+    const handleHomeLinkMouseLeave = () => {
+        setHomeLinkIconOnHover('/public/assets/question-mark-icon.png');
+    }
+
     return (
         <div className="index-page">
             <img className="index-page__image index-page__image--pumpkin" src="src/assets/pumpkin.webp" />
@@ -33,7 +37,7 @@ export function Index() {
             <ResourcesSnippet />
             <button className="index-page__button index-page__button--resources" onClick={handleNavigation}>VER TODOS</button>
             <div className="home-link-container">
-                <HomeLink name="Preguntas" icon={homeLinkIconOnHover || 'src/assets/question-mark-icon.png'} id='preguntas' onMouseEnter={handleHomeLinkMouseEnter}/>
+                <HomeLink name="Preguntas" icon={homeLinkIconOnHover || 'src/assets/question-mark-icon.png'} id='preguntas' onMouseEnter={handleHomeLinkMouseEnter} onMouseLeave={handleHomeLinkMouseLeave}/>
                 {/* <HomeLink name="Logros" icon="src/assets/cup-icon.png" id='logros'/> */}
             </div>
             <img className="index-page__image index-page__image--ghost" src="src/assets/ghost.webp" />
