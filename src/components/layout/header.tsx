@@ -28,19 +28,19 @@ export function Header() {
                     <NavLink className="header__page-link" to='/'>Inicio</NavLink>
                 </div>
                 <div className="header__link-container" onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
-                    <NavLink to="/challenges" onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
+                    <NavLink to="/challenges">
                         <img className="header__icon" src="/public/assets/magic.svg" />
                     </NavLink>
                     <NavLink className="header__page-link" to='/challenges'>Trucos</NavLink>
                 </div>
                 <div className="header__link-container" onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
-                    <NavLink to="/resources" onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
+                    <NavLink to="/resources">
                         <img className="header__icon" src="/public/assets/lollipop.svg" />
                     </NavLink>
                     <NavLink className="header__page-link" to='/resources'>Tratos</NavLink>
                 </div>
                 <div className="header__link-container" onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
-                    <NavLink to="/help" onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
+                    <NavLink to="/help">
                         <img className="header__icon" src="/src/assets/help.png" />
                     </NavLink>
                     <NavLink className="header__page-link" to='/help'>Ayuda</NavLink>
@@ -48,7 +48,7 @@ export function Header() {
                 {(session) ?
                     <Fragment>                        
                         <div className="header__link-container" onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
-                            <NavLink to="/logout" onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
+                            <NavLink to="/logout">
                                 <img className="header__icon" src="/public/assets/login.svg" />
                             </NavLink>
                             <NavLink className="header__page-link" to='/login'>Logout</NavLink>
@@ -56,7 +56,7 @@ export function Header() {
                     </Fragment> :
                     <Fragment>
                         <div className="header__link-container" onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
-                            <NavLink to="/login" onMouseEnter={handleHover} onMouseLeave={handleHoverLeave}>
+                            <NavLink to="/login">
                                 <img className="header__icon" src="/public/assets/login.svg" />
                             </NavLink>
                             <NavLink className="header__page-link" to='/login'>Login</NavLink>
