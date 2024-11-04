@@ -13,31 +13,31 @@ export function Header() {
         <header className={`header ${headerClass}`}>
             <div className="header__container">
                 <div className="header__link-container">
-                    <NavLink to="/"><img className="header__icon header__icon--skull" src="/src/assets/skull.png" /></NavLink>
+                    <NavLink to="/"><img className="header__icon header__icon--skull" src="/assets/skull.png" /></NavLink>
                     <NavLink className="header__page-link" to='/'>Inicio</NavLink>
                 </div>
                 <div className="header__link-container">
-                    <NavLink to="/challenges"><img className="header__icon" src="/src/assets/magic-wand.png" /></NavLink>
+                    <NavLink to="/challenges"><img className="header__icon" src="/assets/magic.svg" /></NavLink>
                     <NavLink className="header__page-link" to='/challenges'>Trucos</NavLink>
                 </div>
                 <div className="header__link-container">
-                    <NavLink to="/resources"><img className="header__icon" src="/src/assets/lollipop.png" /></NavLink>
+                    <NavLink to="/resources"><img className="header__icon" src="/assets/lollipop.svg" /></NavLink>
                     <NavLink className="header__page-link" to='/resources'>Tratos</NavLink>
                 </div>
                 <div className="header__link-container">
-                    <NavLink to="/help"><img className="header__icon" src="/src/assets/help.png" /></NavLink>
+                    <NavLink to="/help"><img className="header__icon" src="/assets/help.png" /></NavLink>
                     <NavLink className="header__page-link" to='/help'>Ayuda</NavLink>
                 </div>
                 {(session) ?
                     <Fragment>                        
                         <div className="header__link-container">
-                            <NavLink to="/logout"><img className="header__icon" src="/src/assets/login.png" /></NavLink>
+                            <NavLink to="/logout"><img className="header__icon" src="/assets/login.svg" /></NavLink>
                             <NavLink className="header__page-link" to='/login'>Logout</NavLink>
                         </div>
                     </Fragment> :
                     <Fragment>
                         <div className="header__link-container">
-                            <NavLink to="/login"><img className="header__icon" src="/src/assets/login.png" /></NavLink>
+                            <NavLink to="/login"><img className="header__icon" src="/assets/login.svg" /></NavLink>
                             <NavLink className="header__page-link" to='/login'>Login</NavLink>
                         </div>
                     </Fragment>}

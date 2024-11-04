@@ -94,8 +94,8 @@ export function ChallengesSnippet() {
                         <tr>
                             <td>{index + 1}.</td>
                             <td>{challenge.title}</td>
-                            { challenge.description.length > 70 ?
-                                <td>{challenge.description.substring(0, 70)}...</td>
+                            { challenge.description.length > 50 ?
+                                <td>{challenge.description.substring(0, 50)}...</td>
                                 :
                                 <td>{challenge.description}</td>
                             }
