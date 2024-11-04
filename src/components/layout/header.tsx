@@ -23,7 +23,10 @@ export function Header() {
     
     const handleHoverLeave = (event) => {
         const target = event.currentTarget as HTMLElement;
+
+        if (!target.classList.contains('shadow-active')) {
             event.currentTarget.style.boxShadow = 'inherit';
+        }
     };
 
     return (
