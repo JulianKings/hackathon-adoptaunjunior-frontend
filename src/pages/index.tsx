@@ -28,8 +28,8 @@ export function Index() {
             <ResourcesSnippet />
             <button className="index-page__button index-page__button--resources" onClick={handleNavigation}>VER TODOS</button>
             <div className="home-link-container">
-                <HomeLink name="Preguntas" icon="src/assets/question-mark-icon.png"/>
-                <HomeLink name="Logros" icon="src/assets/cup-icon.png"/>
+                <HomeLink name="Preguntas" icon='/public/assets/question-mark-icon.png'/>
+                <HomeLink name="Logros" icon='src/assets/cup-icon.png'/>
             </div>
             <img className="index-page__image index-page__image--ghost" src="src/assets/ghost.webp" />
         </div>
